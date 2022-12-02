@@ -1,0 +1,51 @@
+.nav {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navCenterList {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gap47 {
+  gap: 47px;
+}
+
+.navList {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: normal;
+  /* font-weight: 500; */
+  /* font-size: 24px; */
+  line-height: 32px;
+  letter-spacing: 0em;
+  transition: 300ms ease-out;
+}
+
+.navList:hover {
+  border-bottom: 2px solid #292929;
+}
+
+.gap10 {
+  gap: 10px;
+}
+
+.navLogo {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 90px;
+  letter-spacing: 0px;
+  font-family: 'STIX Two Text', serif !important;
+}
+
+.navListIcon {
+  padding: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
