@@ -59,10 +59,11 @@ function FeaturedProducts(props: FeatureMainPropType) {
             {/* <Image src={profile6} alt="" width={51} height={305} /> */}
           </div>
           <p className={styled.FeaturedProductText}>64 major creators</p>
-          <div>
-            <i
+          <div className={styled.arrowContainer}>
+            {/* <i
               className={`${styled.FeaturedIcon} uil uil-arrow-circle-right`}
-            ></i>
+            ></i> */}
+            <i className={`${styled.arrow} uil uil-arrow-right`}></i>
           </div>
         </div>
       </div>

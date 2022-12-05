@@ -1,0 +1,84 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.footerTitle {
+  font-family: Clash Display;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 59px;
+  letter-spacing: 0px;
+}
+
+.footerCopy {
+  text-align: center;
+  margin-top: 90px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: -0.02em;
+  color: #333333;
+}
+
+.footerListContainer {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.footerListText {
+  font-family: Satoshi;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0em;
+  cursor: pointer;
+}
+
+/* FOOTER SUBSCRIPTION */
+
+.Subscription {
+  border: 1px solid #333333;
+  padding: 62px 0;
+  margin: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Subscription h2 {
+  font-family: 'Baskervville', serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 39px;
+  letter-spacing: 0em;
+}
+
+.Subscription p {
+  font-family: Satoshi;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 43px;
+  letter-spacing: 0em;
+  margin-top: 0px;
+}
+
+.Subscription input {
+  width: 400px;
+  height: 60px;
+  padding: 0 40px;
+}
+
+.Subscription button {
+  border: 1px solid #333333;
+  background-color: #333333;
+  cursor: pointer;
+  color: white;
+  width: 182px;
+  margin-left: 23px;
+  height: 60px;
+}

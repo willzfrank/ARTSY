@@ -115,6 +115,24 @@
   }
 }
 
+/* SECTION LIST  */
+
+.sectionTitle {
+  padding: 20px 0 20px 50px;
+  font-family: Satoshi;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 65px;
+  letter-spacing: 0em;
+}
+
+.sectionListIcon {
+  padding: 10px 70px 10px 10px;
+  font-size: 50px;
+  cursor: pointer;
+  color: #4693ed;
+}
+
 @media (prefers-color-scheme: dark) {
   .card,
   .footer {

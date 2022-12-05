@@ -1,0 +1,76 @@
+/* MAIN LEFT SIDE */
+.marketPlaceMain {
+  width: 20%;
+}
+
+/* category component */
+
+.categoryTitle {
+  font-family: Satoshi;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 50px;
+  letter-spacing: 0em;
+  margin-bottom: 5px;
+}
+
+.hrCategory {
+  border-radius: 10px;
+  margin-top: 0;
+  border: 2px solid #afb091;
+  background-color: #afb091;
+}
+
+.checkmarkContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+}
+
+.categoryContainer {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: Satoshi;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+/* .checkmarkBox {
+  position: absolute;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.checkmarkBox:checked {
+  background-color: green;
+  padding: 10px;
+  border: 2px solid red;
+}
+
+.checkmark {
+  border: 2px solid white;
+  padding: 10px;
+
+  border-radius: 5px;
+}
+*/
+.categorySubTitle {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+/* ARTIST */
+.ArtistList {
+  font-family: Satoshi;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+}

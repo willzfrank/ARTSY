@@ -1,0 +1,301 @@
+.marketPlace {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* gap: 72px; */
+  padding: 50px;
+}
+
+.flex {
+  display: flex;
+}
+
+.padding {
+  padding: 0px 50px;
+  display: flex;
+  gap: 150px;
+}
+
+.marketPlaceSearch {
+  width: 30%;
+  position: relative;
+}
+
+.marketPlaceSearchInput {
+  width: 80%;
+  margin: 0 auto;
+  background: #f4f2f2;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  padding: 20px 40px;
+}
+
+.marketPlaceIcon {
+  position: absolute;
+  top: 11px;
+  left: 10px;
+  font-family: Satoshi;
+  font-size: 20px;
+  font-weight: 500;
+  color: #999999;
+}
+
+.marketPlaceSearchInput::placeholder {
+  font-family: Satoshi;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #999999;
+}
+
+.marketPlaceSort {
+  width: 70%;
+  background: #ffffff;
+  box-shadow: 4px 4px 64px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  align-items: center;
+}
+
+.marketPlaceSortContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  cursor: pointer;
+  border: 0.5px solid #292929;
+  padding: 0px 20px;
+  border-radius: 9px;
+  margin: 5px 0;
+}
+
+.marketPlaceSortResult {
+  font-family: Satoshi;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0em;
+}
+
+/* DIRECTORY */
+.Directory {
+  font-family: Satoshi;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 52px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #bcb7b7;
+  padding-left: 139px;
+}
+
+.Directory span {
+  color: black;
+}
+
+/* ADD CART */
+.AddCart {
+  border: 1px solid #333333;
+  border-radius: 5px;
+  gap: 24px;
+  display: flex;
+  margin: 0 120px;
+  height: 929px;
+}
+
+.cartImage {
+  padding: 10px;
+}
+
+.AddCartImage {
+  width: 40%;
+}
+
+.AddCartContainer {
+  width: 60%;
+}
+
+.AddCartContainer h2 {
+  font-family: Satoshi;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 45px;
+  letter-spacing: 0em;
+}
+.cartContainer {
+  border: 1px solid #333333;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px;
+}
+
+.cartContainer p {
+  font-family: STIX Two Text;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 63px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.AddCartCreator {
+  border: 1px solid #333333;
+  display: flex;
+  padding: 30px 0 30px 30px;
+  flex-direction: column;
+}
+
+.AddCartCreator p:first-child {
+  font-family: Satoshi;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.AddCartCreator p:first-child span {
+  color: #4693ed;
+}
+
+.AddCartCreator p:nth-child(2) {
+  font-family: Satoshi;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.AddCartCreator p:nth-child(3) {
+  font-family: Satoshi;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.CartButton {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: max-content;
+  font-family: Satoshi;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.cartIcon {
+  cursor: pointer;
+}
+
+.CartButtonFav {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  margin-top: 20px;
+}
+
+.CartButtonFav button {
+  padding: 24.0042px 87.7654px;
+  background: #3341c1;
+  border-radius: 5.00052px;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.CartFav {
+  border: 1px solid #292929;
+  padding: 15px;
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.CartOthers {
+  padding: 7px 23px;
+  border: 1px solid #333333;
+}
+
+.CartOthers h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Satoshi;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: left;
+  cursor: pointer;
+}
+
+/* CART EXPLORE */
+.CartExplore {
+  box-shadow: 4px 4px 64px 0px #00000014;
+  margin: 50px 120px;
+  border-radius: 15px;
+  display: flex;
+  padding: 26px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cartArrow {
+  display: flex;
+}
+
+/* CART IMAGE */
+.cartImageContainer {
+  margin-left: 120px;
+  display: flex;
+  gap: 40px;
+}
+
+.cartImageBox {
+  border: 1px solid #333333;
+  border-radius: 5px;
+  width: 350px;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cartImageHeartBox {
+  display: flex;
+  font-size: 30px;
+  justify-content: flex-end;
+  padding: 5px 30px;
+}
+
+.cartImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 41px;
+}
+
+.cartImageBottom {
+  display: flex;
+  padding: 0 41px;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Satoshi;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: left;
+}

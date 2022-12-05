@@ -1,5 +1,5 @@
 import Navbar from '../component/Navbar';
-import { HeroHome } from '../sections';
+import { Footer, HeroHome, SectionListComponent } from '../sections';
 import Featured from '../sections/Featured';
 
 export default function Homepage() {
@@ -8,6 +8,8 @@ export default function Homepage() {
       <Navbar />
       <HeroHome />
       <Featured />
+      <SectionListComponent />
+      <Footer />
     </div>
   );
 }
