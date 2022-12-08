@@ -1,0 +1,28 @@
+.purchaseBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 60px;
+}
+
+.purchaseBox h2 {
+  font-weight: 500;
+}
+
+.purchaseBox p {
+  font-weight: 400;
+}
+
+.purchaseBox p span {
+  background: linear-gradient(
+    50.99deg,
+    #4693ed -26.21%,
+    #79c2d2 22.16%,
+    rgba(192, 86, 9, 0.1) 111.62%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}

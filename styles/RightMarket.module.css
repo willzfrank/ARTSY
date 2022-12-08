@@ -3,6 +3,8 @@
   flex-wrap: wrap;
   display: flex;
   gap: 53px;
+  align-items: center;
+  justify-content: center;
 }
 
 /* MARKETIMAGE */

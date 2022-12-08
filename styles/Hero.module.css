@@ -25,3 +25,19 @@
   letter-spacing: 0em;
   text-align: center;
 }
+
+@media (width <= 768px) {
+  .headerContainer {
+    padding: 0 10px;
+    font-size: 50px;
+    line-height: 75px;
+    width: 100%;
+  }
+
+  .headerText {
+    padding: 0 5px;
+    font-size: 23px;
+    width: 100%;
+    line-height: 35px;
+  }
+}

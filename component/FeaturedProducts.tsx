@@ -16,7 +16,13 @@ function FeaturedProducts(props: FeatureMainPropType) {
   return (
     <div className={props.styledClass}>
       <div>
-        <Image src={props.image} alt="" width={610} height={305} />
+        <Image
+          src={props.image}
+          alt=""
+          width={610}
+          height={305}
+          className={styled.FeaturedImage}
+        />
       </div>
       <div>
         <h2 className={styled.FeaturedProductTitle}>The Boolean Egyptian</h2>
@@ -27,7 +33,13 @@ function FeaturedProducts(props: FeatureMainPropType) {
         </p>
         <div className={styled.FeaturedProfileContainer}>
           <div className={styled.FeaturedImageContainer}>
-            <Image src={profile1} alt="" width={51} height={51} />
+            <Image
+              src={profile1}
+              alt=""
+              width={51}
+              height={51}
+              className={styled.FeaturedProfileImg}
+            />
             <Image
               src={profile2}
               alt=""

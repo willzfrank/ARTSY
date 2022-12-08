@@ -8,6 +8,7 @@ import AddCart from './AddCart';
 import CartImageBox from './CartImageBox';
 import AuctionImageBox from './AuctionImageBox';
 import AuctionBidBox from './AuctionBidBox';
+import ShippingComponent from './ShippingComponent';
 
 export {
   HeroHome,
@@ -20,4 +21,5 @@ export {
   CartImageBox,
   AuctionImageBox,
   AuctionBidBox,
+  ShippingComponent,
 };

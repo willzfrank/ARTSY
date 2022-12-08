@@ -2,8 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* gap: 72px; */
-  padding: 50px;
+  padding: 45px;
 }
 
 .flex {
@@ -33,8 +32,8 @@
 
 .marketPlaceIcon {
   position: absolute;
-  top: 11px;
-  left: 10px;
+  top: 15px;
+  left: 15px;
   font-family: Satoshi;
   font-size: 20px;
   font-weight: 500;

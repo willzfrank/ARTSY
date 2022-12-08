@@ -126,3 +126,84 @@
   line-height: 25px;
   letter-spacing: 0px;
 }
+
+/* AUCTION WEB BID */
+
+.BidContainer {
+  padding: 40px 120px;
+}
+
+.BidLinkBox p {
+  font-family: Satoshi;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 52px;
+  letter-spacing: 0px;
+  color: #bcb7b7;
+}
+
+.BidLinkBox p span {
+  color: #333333;
+}
+
+.BidBox {
+  border: 1px solid #000000;
+  display: flex;
+}
+
+.BidBoxImg {
+  width: 40%;
+}
+
+.BidBoxChatBox {
+  width: 60%;
+}
+
+.BidBoxChatProfile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 274px;
+  height: 87px;
+  margin-bottom: 10px;
+  border: 2px solid red;
+}
+
+.BidBoxChatProfile p:nth-child(1) {
+  color: #bcb7b7;
+}
+
+.BidBoxChatProfile p:nth-child(2) {
+  font-weight: 700;
+}
+
+.BidBoxChatProfileImageBox {
+  border-radius: 50%;
+}
+
+.BidBoxChatBody {
+  height: 100vh;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  padding: 0 40px;
+}
+
+.BidBoxChatTextBox {
+  padding: 10px 40px;
+}
+
+.BidBoxChatTextBox p {
+  color: #bcb7b7;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.BidBoxChatTextBox input {
+  padding: 12px 50px 12px 20px;
+  width: 80%;
+  border-radius: 15px;
+  outline: none;
+  margin-right: 50px;
+  border: 1px solid #bcb7b7;
+}

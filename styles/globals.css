@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Rubik:wght@500&family=STIX+Two+Text:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Cardo&family=Inter:wght@500&family=Rubik:wght@500&family=STIX+Two+Text:wght@700&display=swap');
 @import url('https://fonts.cdnfonts.com/css/clash-display');
 
 html,
@@ -31,6 +31,18 @@ li {
   justify-content: center;
   border-top: 0.5px solid #333333;
   padding: 60px 0;
+}
+
+@media (max-width: 768px) {
+  .FeaturedProductContainer {
+    flex-direction: column;
+    padding: 0 5px 60px 5px;
+  }
+
+  .rowReverse {
+    flex-direction: column !important;
+    padding: 0 5px 60px 5px !important;
+  }
 }
 
 .rowReverse {

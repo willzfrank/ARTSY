@@ -1,0 +1,162 @@
+.shippingComponent {
+  display: flex;
+  gap: 10%;
+  padding: 0 100px;
+}
+
+.shippingComponent1 {
+  width: 45%;
+}
+
+.shippingComponent2 {
+  width: 45%;
+}
+
+.shippingForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.shippingFormContent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.flex {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.shippingFormContent label {
+  font-family: Satoshi;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0em;
+  color: #888888;
+}
+
+.shippingFormContent input[type='text'],
+.shippingFormContent input[type='email'] {
+  background: #f2f2f2;
+  border: 0.5px solid #747474;
+  border-radius: 10px;
+  /* width: 610px;
+  height: 76px; */
+  padding: 22px 54px;
+  outline: none;
+}
+
+.shippingFormContent input::placeholder {
+  font-family: Satoshi;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 0px;
+  letter-spacing: 0em;
+}
+
+.shippingFormCheckbox {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  color: #747474;
+  font-weight: 400px;
+}
+
+.shippingFormBtn {
+  padding: 32.7287px 119.664px;
+  background: #3341c1;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  margin: 50px 0;
+}
+
+/* SHIPPING CART SMALL */
+
+.shippingBox {
+  border-top: 0.3px solid #747474;
+  border-bottom: 0.3px solid #747474;
+  padding: 50px 0;
+}
+
+.shippingContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shippingContentContainer {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shippingImgContentContainer {
+  border-radius: 5px;
+}
+
+.shippingText1 {
+  font-family: Satoshi;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.shippingText2 {
+  font-family: Rubik;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  color: #888888;
+}
+
+.shippingText3 {
+  font-family: Rubik;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  color: #888888;
+}
+
+.shippingText3 span {
+  color: initial;
+}
+
+.shippingCounter {
+  display: flex;
+  gap: 40px;
+  font-family: Rubik;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: 0em;
+}
+
+.shippingCounter p:first-child,
+.shippingCounter p:nth-child(3),
+.shippingClose i {
+  cursor: pointer;
+}
+
+.shippingClose {
+  height: 196px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  font-family: Cardo;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 49px;
+  letter-spacing: 0em;
+  text-align: left;
+}

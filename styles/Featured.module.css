@@ -21,6 +21,7 @@
   display: flex;
   align-items: center;
 }
+
 .FeaturedImageContainer {
   position: relative;
   display: flex;
@@ -87,7 +88,7 @@
   position: absolute;
   right: 0%;
   top: 20%;
-  fontsize: 1rem;
+  font-size: 1rem;
   background: transparent;
   border: 1px solid #ccc;
   border-radius: 50%;
@@ -115,4 +116,89 @@
   line-height: 65px;
   letter-spacing: 0em;
   margin-top: 160px;
+}
+
+@media (max-width: 320px) {
+  .featuredTitle {
+    font-size: 30px !important;
+  }
+
+  .FeaturedImageContainer {
+    margin-right: 85px !important;
+  }
+
+  .FeaturedProfileImg,
+  .FeaturedProfileImg1,
+  .FeaturedProfileImg2,
+  .FeaturedProfileImg3,
+  .FeaturedProfileImg4 {
+    width: 28px !important;
+    height: 28px !important;
+  }
+
+  .FeaturedProductText {
+    font-size: 20px !important;
+  }
+
+  .arrow {
+    top: 20%;
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .featuredMain {
+    padding: 0px 5px;
+  }
+
+  .featuredTitle {
+    font-size: 40px;
+    margin-top: 100px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+  }
+
+  .FeaturedImage {
+    width: 100%;
+    height: 100%;
+  }
+
+  .FeaturedProductTitle {
+    font-size: 30px;
+    margin-top: 0;
+  }
+
+  .FeaturedProductText {
+    font-size: 20px;
+  }
+
+  .FeaturedProfileImg,
+  .FeaturedProfileImg1,
+  .FeaturedProfileImg2,
+  .FeaturedProfileImg3,
+  .FeaturedProfileImg4 {
+    width: 32px;
+    height: 32px;
+  }
+
+  .FeaturedProfileImg1 {
+    left: 20px;
+  }
+
+  .FeaturedProfileImg2 {
+    left: 42px;
+  }
+
+  .FeaturedProfileImg3 {
+    left: 64px;
+  }
+
+  .FeaturedProfileImg4 {
+    left: 85px;
+  }
+
+  .FeaturedImageContainer {
+    margin-right: 100px;
+  }
 }

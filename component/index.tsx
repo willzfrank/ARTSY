@@ -12,6 +12,12 @@ import CartExplore from './CartExplore';
 import CartImage from './CartImage';
 import AuctionImage from './AuctionImage';
 import AuctionBid from './AuctionBid';
+import DropComponent from './DropComponent';
+import MarketplaceLink from './MarketplaceLink';
+import CartComponent from './CatComponent';
+import CheckoutBox from './CheckoutBox';
+import ShippingForm from './ShippingForm';
+import ShippingCartSmall from './ShippingCartSmall';
 
 export {
   Navbar,
@@ -28,4 +34,10 @@ export {
   CartImage,
   AuctionImage,
   AuctionBid,
+  DropComponent,
+  MarketplaceLink,
+  CartComponent,
+  CheckoutBox,
+  ShippingForm,
+  ShippingCartSmall,
 };

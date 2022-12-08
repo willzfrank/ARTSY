@@ -1,0 +1,249 @@
+.dropMainLinkTitle {
+  padding-left: 131px;
+  padding-top: 20px;
+  color: #bcb7b7;
+  font-family: Satoshi;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 52px;
+  letter-spacing: 0px;
+}
+
+.dropMainBox h2 span {
+  color: initial;
+}
+
+.dropMainTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 0;
+}
+
+.dropMainTitle h1 {
+  font-family: Satoshi;
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 84px;
+  letter-spacing: 0em;
+  margin-bottom: 0;
+}
+
+.dropMainTitle p:nth-child(2) {
+  font-family: Satoshi;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 44px;
+  margin-top: 0;
+  letter-spacing: 0px;
+}
+
+.dropMainButtonBox p {
+  font-family: Satoshi;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 64px;
+  letter-spacing: 0em;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  width: 400px;
+  margin-top: 0;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.dropMainButtonBox p:hover {
+  background-color: #292929;
+  color: white;
+}
+
+.dropTimeBox {
+  position: relative;
+}
+
+.dropTimeContainer {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    rgba(245, 244, 244, 0.24);
+  border: 0.5px solid #ffffff;
+  backdrop-filter: blur(1.5px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 8px;
+  position: absolute;
+  width: 578px;
+  height: 131px;
+  bottom: 20px;
+  left: 53px;
+  color: white;
+}
+
+.dropTimeContainer {
+  font-family: Satoshi;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  padding: 0 30px;
+}
+
+.dropTimeCount {
+  display: flex;
+  line-height: 0px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dropTimeCount1 {
+  font-size: 22px;
+}
+
+.dropTimeCount2 {
+  font-size: 24px;
+}
+
+.dropTimeCount3 {
+  background: #4693ed !important;
+  padding: 0px 30px;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.dropBox {
+  padding: 50px 131px;
+}
+
+.dropContainer {
+  display: flex;
+  gap: 42px;
+}
+
+.dropContainerTop {
+  background: #4693ed;
+  border-radius: 10px;
+  width: 190px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  cursor: pointer;
+  color: white;
+  margin-bottom: 33px;
+}
+
+.dropText1 {
+  font-family: Satoshi;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+}
+
+.dropText2 {
+  font-family: Satoshi;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 49px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.dropText3 {
+  font-family: Satoshi;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0em;
+  color: #616161;
+}
+
+.dropText4 {
+  font-family: Satoshi;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 33px;
+}
+
+.dropText4 span {
+  color: #006ca2;
+}
+
+.dropText5 {
+  font-family: Satoshi;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0em;
+  color: #006ca2;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .dropMainLinkTitle {
+    padding-left: 10px;
+    padding-top: 20px;
+  }
+
+  .dropMainTitle {
+    padding: 0 10px;
+  }
+
+  .dropTimeCount2 {
+    font-size: 20px;
+  }
+
+  .dropBox {
+    padding: 15px 10px;
+  }
+
+  .dropContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 42px;
+  }
+
+  .dropImage {
+    width: 100%;
+    height: 100%;
+  }
+
+  .dropTimeContainer {
+    border-radius: 3px;
+    width: 90%;
+    height: 101px;
+    bottom: 20px;
+    left: 15px;
+    padding: 0 5px;
+  }
+
+  .dropTimeCount1 {
+    font-size: 18px;
+  }
+
+  .dropTimeCount2 {
+    font-size: 20px;
+  }
+
+  .dropTimeCount3 {
+    padding: 0px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+  .dropMainButtonBox p {
+    width: 300px;
+  }
+}

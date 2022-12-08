@@ -9,17 +9,35 @@ const Footer = () => {
         <h2 className={style.footerTitle}>ARTSY.</h2>
 
         <ul className={style.footerListContainer}>
-          <li className={style.footerListText}>Home</li>
-          <li className={style.footerListText}>Marketplace</li>
-          <li className={style.footerListText}>Auctions</li>
-          <li className={style.footerListText}>Drops</li>
+          <li className={style.footerListText}>
+            <a href="Home.tsx">Home</a>
+          </li>
+
+          <li className={style.footerListText}>
+            <a href="MarketPlace/index.tsx">Marketplace</a>
+          </li>
+          <li className={style.footerListText}>
+            <a href="Auction/index.tsx">Auctions</a>
+          </li>
+          <li className={style.footerListText}>
+            <a href="Drops.tsx">Drops</a>
+          </li>
         </ul>
 
         <ul className={style.footerListContainer}>
-          <li className={style.footerListText}>Blog</li>
-          <li className={style.footerListText}>Wallets</li>
-          <li className={style.footerListText}>Rates</li>
-          <li className={style.footerListText}>High bids</li>
+          <li className={style.footerListText}>
+            <a href="404.tsx"></a>
+            Blog
+          </li>
+          <li className={style.footerListText}>
+            <a href="404.tsx"></a>Wallets
+          </li>
+          <li className={style.footerListText}>
+            <a href="404.tsx"></a>Rates
+          </li>
+          <li className={style.footerListText}>
+            <a href="404.tsx"></a>High bids
+          </li>
         </ul>
 
         <ul className={style.footerListContainer}>

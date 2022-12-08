@@ -1,4 +1,4 @@
-.container {
+/* .container {
   padding: 0 2rem;
 }
 
@@ -106,14 +106,14 @@
 .logo {
   height: 1em;
   margin-left: 0.5rem;
-}
+} */
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
   }
-}
+} */
 
 /* SECTION LIST  */
 
@@ -133,15 +133,15 @@
   color: #4693ed;
 }
 
-@media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
+@media (max-width: 768px) {
+  .sectionTitle {
+    padding: 10px 0 10px 20px;
+    font-size: 25px;
+    line-height: 40px;
   }
-  .code {
-    background: #111;
-  }
-  .logo img {
-    filter: invert(1);
+
+  .sectionListIcon {
+    padding: 10px 20px 10px 10px;
+    font-size: 30px;
   }
 }

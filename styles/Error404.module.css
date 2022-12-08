@@ -1,0 +1,50 @@
+.errorContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.errorBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.errorBox h1 {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .errorContainer {
+    gap: 20px;
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  .errorBox {
+    padding: 1rem;
+    word-wrap: break-word;
+    text-align: center;
+  }
+}
+
+.button {
+  padding: 15px 20px;
+  background-color: #333333;
+  color: white;
+  transition: 1s;
+}
+
+.button .link {
+  text-decoration: none;
+  color: white;
+}
+
+.button .link :hover {
+  background-color: #292929;
+}
