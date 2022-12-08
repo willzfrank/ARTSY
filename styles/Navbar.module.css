@@ -8,6 +8,11 @@
   z-index: 1;
 }
 
+/* MOBILE */
+
+.closeTab {
+  display: none;
+}
 .navCenterList {
   display: flex;
   align-items: center;
@@ -49,4 +54,91 @@
   padding: 10px;
   font-size: 24px;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .gap47,
+  .bell {
+    display: none;
+  }
+
+  .nav {
+    justify-content: space-between;
+    padding: 0px 18px;
+  }
+
+  .nav h1 {
+    margin-left: 70px;
+    font-family: STIX Two Text;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: 0px;
+  }
+
+  .toggle {
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .closeTab {
+    display: block;
+    transition: 1s;
+    height: 100vh;
+    z-index: 2;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+  }
+
+  .absolute {
+    position: relative !important;
+    height: 90vh;
+  }
+
+  .mobilenavMessage {
+    position: absolute !important;
+    bottom: 0px;
+    right: 10px;
+    cursor: pointer;
+  }
+
+  .mobilegap47 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .mobilenavList {
+    font-family: Satoshi;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 52px;
+    letter-spacing: 0px;
+    color: #333333;
+  }
+  .mobilecloseTab {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+  }
+  .closetoggle {
+    font-size: 2.5rem;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+
+  .mobilecloseTab h2 {
+    font-family: STIX Two Text;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 52px;
+    letter-spacing: 0px;
+    margin-left: 20px;
+  }
 }
