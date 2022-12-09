@@ -74,3 +74,9 @@
   letter-spacing: 0em;
   text-align: left;
 }
+
+@media (max-width: 428px) {
+  .marketPlaceMain {
+    display: none;
+  }
+}

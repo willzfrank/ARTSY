@@ -17,7 +17,9 @@ export default function Drops() {
       </h2>
       <div className={style.dropMainTitle}>
         <h1>Upcoming drops</h1>
-        <p>Turn on notifications so that no drops will miss you.</p>
+        <p className={style.dropText}>
+          Turn on notifications so that no drops will miss you.
+        </p>
         <div className={style.dropMainButtonBox}>
           <p>Notify me</p>
         </div>

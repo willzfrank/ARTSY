@@ -6,15 +6,15 @@ const Footer = () => {
     <footer>
       <FooterSubscription />
       <div className={style.footer}>
-        <h2 className={style.footerTitle}>ARTSY.</h2>
+        <h2 className={`${style.hidden} {style.footerTitle}`}>ARTSY.</h2>
 
-        <ul className={style.footerListContainer}>
+        <ul className={`${style.hidden} ${style.footerListContainer}`}>
           <li className={style.footerListText}>
             <a href="Home.tsx">Home</a>
           </li>
 
           <li className={style.footerListText}>
-            <a href="MarketPlace/index.tsx">Marketplace</a>
+            <a href="MarketPlace/">Marketplace</a>
           </li>
           <li className={style.footerListText}>
             <a href="Auction/index.tsx">Auctions</a>
@@ -24,7 +24,7 @@ const Footer = () => {
           </li>
         </ul>
 
-        <ul className={style.footerListContainer}>
+        <ul className={`${style.hidden} ${style.footerListContainer}`}>
           <li className={style.footerListText}>
             <a href="404.tsx"></a>
             Blog
@@ -41,6 +41,7 @@ const Footer = () => {
         </ul>
 
         <ul className={style.footerListContainer}>
+          <li className={style.mobilehidden}>REACH US</li>
           <li className={style.footerListText}>
             <i className="uil uil-envelope"></i> artsystudios@gmail.com
           </li>

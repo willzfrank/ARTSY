@@ -29,15 +29,49 @@
 @media (width <= 768px) {
   .headerContainer {
     padding: 0 10px;
-    font-size: 50px;
-    line-height: 75px;
     width: 100%;
+    font-family: Clash Display;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 5px;
   }
 
   .headerText {
-    padding: 0 5px;
-    font-size: 23px;
+    padding: 0 20px;
     width: 100%;
-    line-height: 35px;
+    font-family: Satoshi;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .headerContainer {
+    padding: 0px !important;
+    width: 100%;
+    font-family: Clash Display;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 88px !important;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .headerText {
+    padding: 0 20px;
+    width: 100%;
+    font-family: Satoshi;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
   }
 }

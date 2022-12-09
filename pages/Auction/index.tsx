@@ -17,7 +17,7 @@ function Auction() {
       <h2 className={classes.AuctionTitle}>
         Here’s an overview of products actively on auction, explore!
       </h2>
-      <AuctionImageBox />
+      {/* <AuctionImageBox /> */}
 
       <h2 className={classes.popularTitle}>Top bids from popular creators</h2>
       <AuctionBidBox />

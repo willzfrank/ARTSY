@@ -24,7 +24,7 @@ function FeaturedProducts(props: FeatureMainPropType) {
           className={styled.FeaturedImage}
         />
       </div>
-      <div>
+      <div className={styled.mobileFeaturedProduct}>
         <h2 className={styled.FeaturedProductTitle}>The Boolean Egyptian</h2>
         <p className={styled.FeaturedProductText}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
@@ -36,36 +36,36 @@ function FeaturedProducts(props: FeatureMainPropType) {
             <Image
               src={profile1}
               alt=""
-              width={51}
-              height={51}
+              width={45}
+              height={45}
               className={styled.FeaturedProfileImg}
             />
             <Image
               src={profile2}
               alt=""
-              width={51}
-              height={51}
+              width={45}
+              height={45}
               className={styled.FeaturedProfileImg1}
             />
             <Image
               src={profile3}
               alt=""
-              width={51}
-              height={51}
+              width={45}
+              height={45}
               className={styled.FeaturedProfileImg2}
             />
             <Image
               src={profile4}
               alt=""
-              width={51}
-              height={51}
+              width={45}
+              height={45}
               className={styled.FeaturedProfileImg3}
             />
             <Image
               src={profile5}
               alt=""
-              width={51}
-              height={51}
+              width={45}
+              height={45}
               className={styled.FeaturedProfileImg4}
             />
             {/* <Image src={profile6} alt="" width={51} height={305} /> */}

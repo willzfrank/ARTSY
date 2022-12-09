@@ -28,10 +28,10 @@ const Navbar = () => {
                 <Link href="/">Home</Link>
               </li>
               <li className={styled.mobilenavList}>
-                <a href="/MarketPlace/index.tsx">Marketplace</a>
+                <Link href="/MarketPlace">Marketplace</Link>
               </li>
               <li className={styled.mobilenavList}>
-                <a href="/Auction/index.tsx">Auctions</a>
+                <Link href="/Auction">Auctions</Link>
               </li>
               <li className={styled.mobilenavList}>
                 <Link href="/Drops">Drop</Link>
@@ -61,10 +61,10 @@ const Navbar = () => {
           <Link href="/">Home</Link>
         </li>
         <li className={styled.navList}>
-          <a href="/MarketPlace/index.tsx">Marketplace</a>
+          <Link href="/MarketPlace">Marketplace</Link>
         </li>
         <li className={styled.navList}>
-          <a href="/Auction/index.tsx">Auctions</a>
+          <Link href="/Auction/">Auctions</Link>
         </li>
         <li className={styled.navList}>
           <Link href="/Drops">Drop</Link>

@@ -56,10 +56,18 @@
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+.toggle {
+  display: none;
+}
+
+@media (max-width: 428px) {
   .gap47,
   .bell {
     display: none;
+  }
+
+  .toggle {
+    display: block;
   }
 
   .nav {
@@ -83,7 +91,6 @@
 
   .closeTab {
     display: block;
-    transition: 1s;
     height: 100vh;
     z-index: 2;
     width: 100%;

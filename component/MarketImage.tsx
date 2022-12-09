@@ -1,3 +1,4 @@
+import styled from '@emotion/styled';
 import Image from 'next/image';
 import style from '../styles/RightMarket.module.css';
 export default function MarketImage() {
@@ -12,9 +13,10 @@ export default function MarketImage() {
           className={style.imageMain}
         />
       </div>
-
-      <h2>PHILOMENA &#39;22</h2>
-      <h3>$3.90</h3>
+      <div className={style.mobileFlex}>
+        <h2>PHILOMENA &#39;22</h2>
+        <h3>$3.90</h3>
+      </div>
     </div>
   );
 }

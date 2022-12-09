@@ -10,7 +10,13 @@ export default function AuctionBid() {
           <i className="uil uil-heart"></i>
         </div>
         <div>
-          <Image src="/Rectangle 57.png" alt="" height={240} width={398} />
+          <Image
+            src="/Rectangle 57.png"
+            alt=""
+            height={240}
+            width={398}
+            className={style.bidImage}
+          />
         </div>
         <div className={style.auctionBidText}>
           <p>Out of the box</p>

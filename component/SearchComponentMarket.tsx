@@ -14,7 +14,13 @@ const SearchComponentMarket = () => {
         />
       </div>
       <div className={styled.marketPlaceSort}>
-        <p className={styled.marketPlaceSortResult}>See 1-6 of 15 results</p>
+        <p className={`${styled.mobilehidden} ${styled.marketPlaceSortResult}`}>
+          See 1-6 of 15 results
+        </p>
+        <div className={`${styled.hidden} ${styled.marketPlaceSortContent}`}>
+          <p>Filters</p>
+          <i className="uil uil-angle-down"></i>
+        </div>
         <div className={styled.marketPlaceSortContent}>
           <p>Sort by</p>
           <i className="uil uil-angle-down"></i>

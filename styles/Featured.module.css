@@ -63,7 +63,7 @@
 
 .FeaturedProductTitle {
   font-family: STIX Two Text;
-  font-size: 40px;
+  font-size: 36px;
   font-weight: 700;
   line-height: 50px;
   letter-spacing: 0em;
@@ -71,7 +71,7 @@
 
 .FeaturedProductText {
   font-family: Satoshi;
-  font-size: 24px;
+  font-size: 21px;
   font-weight: 400;
   line-height: 32px;
   letter-spacing: 0em;
@@ -111,18 +111,14 @@
 }
 
 .featuredTitle {
-  font-size: 48px;
+  font-size: 34px;
   font-weight: 500;
-  line-height: 65px;
+  line-height: 55px;
   letter-spacing: 0em;
   margin-top: 160px;
 }
 
 @media (max-width: 320px) {
-  .featuredTitle {
-    font-size: 30px !important;
-  }
-
   .FeaturedImageContainer {
     margin-right: 85px !important;
   }
@@ -136,14 +132,50 @@
     height: 28px !important;
   }
 
-  .FeaturedProductText {
-    font-size: 20px !important;
-  }
-
   .arrow {
     top: 20%;
     width: 2rem;
     height: 2rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .featuredMain {
+    padding: 0px;
+  }
+
+  .FeaturedImage {
+    width: 100%;
+    height: 255px;
+    padding-top: 30px;
+  }
+
+  .mobileFeaturedProduct {
+    width: 60%;
+  }
+
+  .featuredTitle {
+    font-family: Satoshi;
+    font-size: 30px;
+    margin-top: 100px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0em;
+    padding-left: 10px;
+  }
+
+  .FeaturedProductTitle {
+    font-size: 32px;
+    margin-top: 0;
+  }
+
+  .FeaturedProductText {
+    font-family: Satoshi;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    color: #616161;
   }
 }
 
@@ -153,15 +185,18 @@
   }
 
   .featuredTitle {
-    font-size: 40px;
+    font-family: Satoshi;
+    font-size: 28px !important;
     margin-top: 100px;
-    padding-left: 10px;
-    margin-bottom: 15px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0em;
   }
 
   .FeaturedImage {
     width: 100%;
-    height: 100%;
+    height: 255px;
+    padding-top: 30px;
   }
 
   .FeaturedProductTitle {
@@ -170,7 +205,12 @@
   }
 
   .FeaturedProductText {
-    font-size: 20px;
+    font-family: Satoshi;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    color: #616161;
   }
 
   .FeaturedProfileImg,

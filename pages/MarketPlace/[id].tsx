@@ -11,7 +11,7 @@ export default function Explore() {
       <Directory />
       <AddCart />
       <CartExplore />
-      <CartImageBox />
+      {/* <CartImageBox /> */}
     </div>
   );
 }
