@@ -21,7 +21,7 @@
   display: flex;
   gap: 90px;
   position: absolute;
-  top: -41px;
+  top: -43px;
 }
 
 .marketLink p:first-child {
@@ -183,4 +183,10 @@
   letter-spacing: 0em;
   color: #292929;
   font-size: 19px;
+}
+
+@media (min-width: 320px) and (max-width: 979px) {
+  .marketLinkBox {
+    display: none;
+  }
 }

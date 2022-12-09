@@ -160,3 +160,45 @@
   letter-spacing: 0em;
   text-align: left;
 }
+
+@media (min-width: 320px) and (max-width: 979px) {
+  .shippingComponent {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0px;
+  }
+
+  .shippingFormContent {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .shippingComponent1 {
+    width: 100%;
+    padding: 0 12px;
+  }
+
+  .shippingComponent2 {
+    width: 100%;
+    padding: 0 12px;
+  }
+
+  .shippingFormContentMobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .shippingFormBtn {
+    padding: 17.5073px 64.0111px;
+    background: #3341c1;
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+    margin: 50px 0;
+  }
+}

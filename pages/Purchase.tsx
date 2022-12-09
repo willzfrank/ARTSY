@@ -9,7 +9,12 @@ export default function Purchase() {
       <HeadComponent />
       <Navbar />
       <div className={style.purchaseBox}>
-        <Image src="" alt="" width={454} height={400} />
+        <Image
+          src="/Woman get online delivery.png"
+          alt=""
+          width={404}
+          height={400}
+        />
         <h2>Hey Celestina, thank you for your purchase. </h2>
         <p>
           You are amazing. Cheers to being <span>ARTSY</span> !

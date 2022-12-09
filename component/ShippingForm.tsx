@@ -34,11 +34,11 @@ export default function ShippingForm() {
       </div>
 
       <div className={`${style.flex} ${style.shippingFormContent}`}>
-        <div>
+        <div className={style.shippingFormContentMobile}>
           <label htmlFor="">Country</label>
           <input type="text" name="" id="" />
         </div>
-        <div>
+        <div className={style.shippingFormContentMobile}>
           <label htmlFor="">Postal code</label>
           <input type="text" name="" id="" placeholder="001001" />
         </div>

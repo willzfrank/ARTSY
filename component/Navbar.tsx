@@ -64,7 +64,7 @@ const Navbar = () => {
           <Link href="/MarketPlace">Marketplace</Link>
         </li>
         <li className={styled.navList}>
-          <Link href="/Auction/">Auctions</Link>
+          <Link href="/Auction">Auctions</Link>
         </li>
         <li className={styled.navList}>
           <Link href="/Drops">Drop</Link>
