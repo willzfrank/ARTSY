@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Cardo&family=Inter:wght@500&family=Rubik:wght@500&family=STIX+Two+Text:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Bellefair&family=Cardo&family=Inter:wght@500&family=Poppins&family=Rubik:wght@500&family=STIX+Two+Text:wght@700&display=swap');
 @import url('https://fonts.cdnfonts.com/css/clash-display');
 
 html,
@@ -68,4 +68,8 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+Link {
+  cursor: pointer;
 }

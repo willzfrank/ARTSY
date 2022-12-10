@@ -1,0 +1,66 @@
+.creatorBox {
+  background: #e2e2e2;
+  height: max-content;
+  padding: 30px 80px;
+  position: relative;
+}
+
+.creatorBox h1 {
+  font-family: Clash Display;
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 86px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #161616;
+  width: 100%;
+  padding-top: 70px;
+}
+
+.creatorBox p {
+  font-family: Clash Display;
+  font-size: 32px;
+  font-weight: 200;
+  line-height: 42px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #00000091;
+}
+
+.creatorBox2 h2 {
+  font-family: Clash Display;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 0px;
+  letter-spacing: 0em;
+  color: #333333;
+}
+
+.creatorBox2 h1 {
+  font-family: Clash Display;
+  font-size: 170px;
+  font-weight: 700;
+  line-height: 0px;
+  letter-spacing: 0em;
+  color: #161616;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .creatorBox h1 {
+    font-family: Clash Display;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 37px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .creatorBox p {
+    font-family: Clash Display;
+    font-size: 13px;
+    font-weight: 200;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+}

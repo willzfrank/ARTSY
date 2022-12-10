@@ -18,6 +18,9 @@ import CartComponent from './CatComponent';
 import CheckoutBox from './CheckoutBox';
 import ShippingForm from './ShippingForm';
 import ShippingCartSmall from './ShippingCartSmall';
+import HeroSwiper from './HeroSwiper';
+import UpcomingAuction from './UpcomingAuction';
+import VerticalSwiper from './VerticalSwiper';
 
 export {
   Navbar,
@@ -40,4 +43,6 @@ export {
   CheckoutBox,
   ShippingForm,
   ShippingCartSmall,
+  UpcomingAuction,
+  VerticalSwiper,
 };

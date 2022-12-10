@@ -30,3 +30,42 @@
   -webkit-text-fill-color: transparent;
   font-weight: bold;
 }
+
+.swiperMainTest {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* HERO SWIPER */
+
+.swiperMain {
+  width: 100%;
+}
+
+.swiperImage {
+  width: 100% !important;
+}
+
+.swiperBox {
+  width: 100% !important;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.mobileSwipe {
+  display: none;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .mobileSwipe {
+    display: flex;
+    margin-top: 50px;
+  }
+
+  .swiperBox {
+    display: none;
+  }
+}

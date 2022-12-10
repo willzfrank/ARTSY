@@ -1,0 +1,143 @@
+.upcoming {
+  background: linear-gradient(
+    99.99deg,
+    #4693ed -26.21%,
+    #79c2d2 22.16%,
+    rgba(192, 86, 9, 0.49) 111.62%
+  );
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upcoming2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.upcomingImage {
+  width: 100% !important;
+  height: 400px !important;
+}
+
+.upcoming3 {
+  position: absolute;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 30px 4px;
+}
+
+.upcoming3Text1 {
+  font-family: 'Bellefair', serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 46px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-top: 33px;
+}
+
+.upComing4 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.upComing4Text1 {
+  font-family: 'Bellefair', serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-top: 33px;
+}
+
+.upComing4Text2 {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.upComing4Text3 {
+  font-family: Satoshi;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0.065em;
+  text-align: left;
+}
+
+.Upcoming5 {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  font-family: Satoshi;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.Upcoming5 p:first-child {
+  text-decoration: underline;
+}
+
+.Upcoming5 p:nth-child(2) {
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  width: 102px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .upcoming3 {
+    gap: 30px;
+    padding: 30px 10px;
+  }
+
+  .upcomingImage {
+    width: 100% !important;
+    height: 450px !important;
+  }
+
+  .upcoming3Text1 {
+    font-size: 44px;
+  }
+
+  .upComing4Text1 {
+    font-size: 30px;
+  }
+
+  .upComing4Text2 {
+    font-size: 22px;
+  }
+
+  .upComing4Text3 {
+    font-size: 20px;
+    line-height: 35px;
+  }
+
+  .Upcoming5 {
+    font-size: 20px;
+  }
+
+  .Upcoming5 p:nth-child(2) {
+    width: 170px;
+    height: 50px;
+  }
+}
