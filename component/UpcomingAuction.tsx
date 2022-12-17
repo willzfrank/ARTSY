@@ -6,7 +6,11 @@ export default function UpcomingAuction() {
   return (
     <div className={style.upcoming}>
       <div>
-        <h1>See Upcoming Auctions and Exhibitions</h1>
+        <div className={style.upcomingHeader}>
+          <h1>See Upcoming Auctions and Exhibitions</h1>
+          <hr />
+        </div>
+
         <div className={style.upcoming2}>
           <Image
             src="/Rectangle 91.png"

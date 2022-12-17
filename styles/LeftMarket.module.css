@@ -75,7 +75,7 @@
   text-align: left;
 }
 
-@media (max-width: 428px) {
+@media (max-width: 1000px) {
   .marketPlaceMain {
     display: none;
   }

@@ -1,10 +1,12 @@
 import React from 'react';
 import { style } from '@mui/system';
+import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Link from 'next/link';
 import styled from '../styles/Navbar.module.css';
 
 const Navbar = () => {
+  const router = useRouter();
   const [isOpen, setIsOpen] = React.useState<boolean>(false);
 
   const toggleMenu = () => {
@@ -24,16 +26,42 @@ const Navbar = () => {
             </div>
 
             <ul className={`${styled.navCenterList} ${styled.mobilegap47}`}>
-              <li className={styled.mobilenavList}>
-                <Link href="/">Home</Link>
+              <li
+                className={
+                  router.pathname === '/'
+                    ? 'mobilenavList mobileactive'
+                    : 'mobilenavList'
+                }
+              >
+                <Link href="/" className="link">
+                  Home
+                </Link>
               </li>
-              <li className={styled.mobilenavList}>
+              <li
+                className={
+                  router.pathname === '/MarketPlace'
+                    ? 'mobilenavList mobileactive'
+                    : 'mobilenavList'
+                }
+              >
                 <Link href="/MarketPlace">Marketplace</Link>
               </li>
-              <li className={styled.mobilenavList}>
+              <li
+                className={
+                  router.pathname === '/Auction'
+                    ? 'mobilenavList mobileactive'
+                    : 'mobilenavList'
+                }
+              >
                 <Link href="/Auction">Auctions</Link>
               </li>
-              <li className={styled.mobilenavList}>
+              <li
+                className={
+                  router.pathname === '/Drops'
+                    ? 'mobilenavList mobileactive'
+                    : 'mobilenavList'
+                }
+              >
                 <Link href="/Drops">Drop</Link>
               </li>
             </ul>
@@ -57,16 +85,28 @@ const Navbar = () => {
       <h1>ARTSY.</h1>
 
       <ul className={`${styled.navCenterList} ${styled.gap47}`}>
-        <li className={styled.navList}>
+        <li className={router.pathname === '/' ? 'navList active' : 'navList'}>
           <Link href="/">Home</Link>
         </li>
-        <li className={styled.navList}>
+        <li
+          className={
+            router.pathname === '/MarketPlace' ? 'navList active' : 'navList'
+          }
+        >
           <Link href="/MarketPlace">Marketplace</Link>
         </li>
-        <li className={styled.navList}>
+        <li
+          className={
+            router.pathname === '/Auction' ? 'navList active' : 'navList'
+          }
+        >
           <Link href="/Auction">Auctions</Link>
         </li>
-        <li className={styled.navList}>
+        <li
+          className={
+            router.pathname === '/Drops' ? 'navList active' : 'navList'
+          }
+        >
           <Link href="/Drops">Drop</Link>
         </li>
       </ul>

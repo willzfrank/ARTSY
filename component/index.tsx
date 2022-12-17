@@ -21,6 +21,7 @@ import ShippingCartSmall from './ShippingCartSmall';
 import HeroSwiper from './HeroSwiper';
 import UpcomingAuction from './UpcomingAuction';
 import VerticalSwiper from './VerticalSwiper';
+import FloatingInput from './FloatingInput';
 
 export {
   Navbar,
@@ -45,4 +46,5 @@ export {
   ShippingCartSmall,
   UpcomingAuction,
   VerticalSwiper,
+  FloatingInput,
 };

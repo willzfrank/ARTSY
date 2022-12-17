@@ -6,6 +6,7 @@ import profile3 from '../public/Ellipse 16.png';
 import profile4 from '../public/Ellipse 17.png';
 import profile5 from '../public/Ellipse 18.png';
 import styled from '../styles/Featured.module.css';
+import Link from 'next/link';
 
 type FeatureMainPropType = {
   styledClass: string;
@@ -15,14 +16,25 @@ type FeatureMainPropType = {
 function FeaturedProducts(props: FeatureMainPropType) {
   return (
     <div className={props.styledClass}>
-      <div>
-        <Image
-          src={props.image}
-          alt=""
-          width={610}
-          height={305}
-          className={styled.FeaturedImage}
-        />
+      <div className={styled.MainFeaturedImage}>
+        <Link href="/MarketPlace">
+          <Image
+            src={props.image}
+            alt=""
+            width={610}
+            height={305}
+            className={styled.FeaturedImage}
+          />
+        </Link>
+
+        <div className={styled.InnerFeaturedImage}>
+          <h2>
+            View Products
+            <div className={styled.arrowContainer}>
+              <i className={`${styled.Imagearrow} uil uil-arrow-right`}></i>
+            </div>
+          </h2>
+        </div>
       </div>
       <div className={styled.mobileFeaturedProduct}>
         <h2 className={styled.FeaturedProductTitle}>The Boolean Egyptian</h2>

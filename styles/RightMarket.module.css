@@ -48,7 +48,7 @@
   border-radius: 15px;
 }
 
-@media (max-width: 428px) {
+@media (max-width: 1000px) {
   .rightMarketMain {
     width: 100%;
     gap: 45px;

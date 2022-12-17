@@ -2,7 +2,7 @@ import styles from '../styles/Hero.module.css';
 
 export default function HeroHome() {
   return (
-    <header>
+    <header className={styles.headerBox}>
       <h1 className={styles.headerContainer}>
         Photography is poetry & beautiful untold stories
       </h1>

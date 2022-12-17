@@ -17,25 +17,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: 300ms ease-out;
 }
 
 .gap47 {
   gap: 47px;
-}
-
-.navList {
-  cursor: pointer;
-  font-size: 18px;
-  font-weight: normal;
-  /* font-weight: 500; */
-  /* font-size: 24px; */
-  line-height: 32px;
-  letter-spacing: 0em;
-  transition: 300ms ease-out;
-}
-
-.navList:hover {
-  border-bottom: 2px solid #292929;
 }
 
 .gap10 {

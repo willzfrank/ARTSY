@@ -1,9 +1,9 @@
 /* SECTION LIST  */
 
 .sectionTitle {
-  padding: 10px 0 10px 10px;
+  padding: 10px 0 10px 30px;
   font-family: Satoshi;
-  font-size: 30px;
+  font-size: 48px;
   font-weight: 500;
   line-height: 65px;
   letter-spacing: 0em;
@@ -11,7 +11,7 @@
 
 .sectionListIcon {
   padding: 10px 20px 10px 10px;
-  font-size: 37px;
+  font-size: 57px;
   cursor: pointer;
   color: #4693ed;
 }

@@ -7,6 +7,55 @@
   padding: 60px 0;
 }
 
+.MainFeaturedImage {
+  position: relative;
+  color: transparent;
+  border: transparent;
+}
+
+.MainFeaturedImage:hover {
+  color: white;
+}
+
+.Imagearrow {
+  border: none;
+}
+
+.Imagearrow:hover {
+  border: 1px solid #ccc;
+}
+
+.InnerFeaturedImage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* color: white; */
+  width: 80%;
+  font-family: Clash Display;
+  font-size: 30px;
+}
+.Imagearrow {
+  position: absolute;
+  right: 0%;
+  top: 30%;
+  font-size: 1rem;
+  background: transparent;
+  /* border: 1px solid #ccc; */
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.FeaturedImage:hover {
+  cursor: pointer;
+  transition: 0.2s;
+  filter: blur(2px) brightness(60%);
+}
 .rowReverse {
   display: flex;
   gap: 37px;
@@ -63,15 +112,16 @@
 
 .FeaturedProductTitle {
   font-family: STIX Two Text;
-  font-size: 36px;
+  font-size: 40px;
   font-weight: 700;
   line-height: 50px;
   letter-spacing: 0em;
+  color: #333333;
 }
 
 .FeaturedProductText {
   font-family: Satoshi;
-  font-size: 21px;
+  font-size: 24px;
   font-weight: 400;
   line-height: 32px;
   letter-spacing: 0em;
@@ -101,6 +151,7 @@
 }
 
 /* FEATURED  */
+
 .featuredMain {
   display: flex;
   align-items: flex-start;
@@ -111,7 +162,7 @@
 }
 
 .featuredTitle {
-  font-size: 34px;
+  font-size: 48px;
   font-weight: 500;
   line-height: 55px;
   letter-spacing: 0em;
@@ -136,6 +187,10 @@
     top: 20%;
     width: 2rem;
     height: 2rem;
+  }
+
+  .InnerFeaturedImage {
+    font-size: 20px;
   }
 }
 
@@ -180,6 +235,10 @@
 }
 
 @media (max-width: 768px) {
+  .InnerFeaturedImage {
+    font-size: 25px;
+  }
+
   .featuredMain {
     padding: 0px 5px;
   }

@@ -1,3 +1,12 @@
+.headerBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  flex-direction: column;
+}
+
 .headerContainer {
   display: flex;
   align-items: center;
@@ -7,8 +16,9 @@
   font-weight: 600;
   line-height: 125px;
   letter-spacing: 0px;
-  text-align: center;
-  /* width: 70%;
+  width: 70%;
+
+  /* 
   margin: 0 auto; */
 }
 
@@ -17,8 +27,8 @@
   align-items: center;
   justify-content: center;
   font-family: Satoshi;
-  font-size: 23px;
-  width: 70%;
+  font-size: 28px;
+  width: 55%;
   margin: 0 auto;
   font-weight: 500;
   line-height: 44px;

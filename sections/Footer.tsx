@@ -6,7 +6,7 @@ const Footer = () => {
     <footer>
       <FooterSubscription />
       <div className={style.footer}>
-        <h2 className={`${style.hidden} {style.footerTitle}`}>ARTSY.</h2>
+        <h2 className={`${style.hidden} ${style.footerTitle}`}>ARTSY.</h2>
 
         <ul className={`${style.hidden} ${style.footerListContainer}`}>
           <li className={style.footerListText}>

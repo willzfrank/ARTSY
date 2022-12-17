@@ -27,7 +27,7 @@ li {
 .FeaturedProductContainer {
   display: flex;
   gap: 37px;
-  /* align-items: center; */
+  align-items: center;
   justify-content: center;
   border-top: 0.5px solid #333333;
   padding: 60px 0;
@@ -49,7 +49,7 @@ li {
   display: flex;
   gap: 37px;
   flex-direction: row-reverse;
-  /* align-items: center; */
+  align-items: center;
   justify-content: center;
   border-top: 0.5px solid #333333;
   padding: 60px 0;
@@ -72,4 +72,114 @@ li {
 
 Link {
   cursor: pointer;
+}
+
+/* NAVBAR CSS */
+
+.navList {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: normal;
+  /* font-weight: 500; */
+  /* font-size: 24px; */
+  line-height: 32px;
+  letter-spacing: 0em;
+  transition: 300ms ease-out;
+  position: relative;
+}
+
+.navList:after {
+  bottom: -4px;
+  content: '';
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  background: #292929;
+  opacity: 0.6;
+  transition: width 0.6s ease 0s, opacity 0.3s ease 0s;
+  width: 0;
+}
+
+.navList:hover:after {
+  width: 100%;
+  opacity: 0.9;
+}
+
+.active {
+  border-bottom: 2px solid #292929;
+}
+
+@media (max-width: 428px) {
+  .mobilenavList {
+    font-family: Satoshi;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 52px;
+    letter-spacing: 0px;
+    color: #333333;
+    padding: 0 15px;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 300ms ease-out;
+  }
+
+  .mobilenavList,
+  .mobilenavList:after,
+  .mobilenavList:before {
+    transition: all 0.5s;
+  }
+
+  .mobilenavList:after {
+    display: block;
+    position: absolute;
+    margin: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: '.';
+    color: transparent;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+    background: transparent;
+  }
+
+  .mobilenavList:hover:after {
+    -webkit-animation: circle 1.5s ease-in forwards;
+  }
+
+  /* Keyframes */
+  @keyframes circle {
+    0% {
+      width: 1px;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: auto;
+      height: 1px;
+      z-index: -1;
+      background: #eee;
+      border-radius: 100%;
+    }
+    100% {
+      background: #aaa;
+      height: 5000%;
+      width: 5000%;
+      z-index: -1;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      border-radius: 0;
+    }
+  }
+  .active {
+    color: red;
+  }
 }
