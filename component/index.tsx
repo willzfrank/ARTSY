@@ -3,7 +3,7 @@ import FeaturedProducts from './FeaturedProducts';
 import SectionList from './SectionList';
 import SearchComponentMarket from './SearchComponentMarket';
 import { MarketCategory } from './MarketCategory';
-import Slider from './Slider';
+import SliderBox from './Slider';
 import CollectionMarket from './CollectionMarket';
 import MarketImage from './MarketImage';
 import FooterSubscription from './FooterSubscription';
@@ -29,7 +29,7 @@ export {
   SectionList,
   SearchComponentMarket,
   MarketCategory,
-  Slider,
+  SliderBox,
   CollectionMarket,
   MarketImage,
   FooterSubscription,

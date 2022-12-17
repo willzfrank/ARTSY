@@ -46,6 +46,7 @@
   height: 414px;
   box-shadow: 0px 34px 68px rgba(217, 225, 244, 0.36);
   border-radius: 15px;
+  background-color: white;
 }
 
 @media (max-width: 1000px) {
@@ -56,8 +57,9 @@
 
   .MarketImage {
     width: 357px;
-    height: 384px;
+    height: 380px;
     margin-top: 45px;
+    background-color: #d9d9d9;
   }
 
   .imageMain {

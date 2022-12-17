@@ -8,7 +8,7 @@ body {
   color: #292929;
   font-family: 'Satoshi', sans-serif;
   scroll-behavior: smooth;
-  /* background-color: #d9d9d9; */
+  background-color: #d9d9d9;
 }
 
 * {
@@ -31,6 +31,24 @@ li {
   justify-content: center;
   border-top: 0.5px solid #333333;
   padding: 60px 0;
+}
+
+.arrowOpen {
+  transform: rotate(180deg);
+  transition: 0.5s;
+}
+
+.dropDownOpen {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+  border: 2px solid red;
+}
+
+.dropdown-body {
+  display: none;
 }
 
 @media (max-width: 768px) {

@@ -26,6 +26,7 @@
   flex-direction: column;
   width: 100%;
   gap: 15px;
+  transition: 0.5s;
 }
 
 .categoryContainer {
@@ -63,6 +64,7 @@
   display: flex;
   justify-content: space-between;
   margin-top: 60px;
+  cursor: pointer;
 }
 
 /* ARTIST */
@@ -72,9 +74,28 @@
   font-weight: 400;
   line-height: 32px;
   letter-spacing: 0em;
-  text-align: left;
+  transition: 300ms ease-out;
+  position: relative;
+  cursor: pointer;
 }
 
+.ArtistList:after {
+  bottom: -4px;
+  content: '';
+  display: block;
+  height: 2px;
+  left: 0;
+  position: absolute;
+  background: #292929;
+  opacity: 0.6;
+  transition: width 0.6s ease 0s, opacity 0.3s ease 0s;
+  width: 0;
+}
+
+.ArtistList:hover:after {
+  width: 10%;
+  opacity: 0.9;
+}
 @media (max-width: 1000px) {
   .marketPlaceMain {
     display: none;
