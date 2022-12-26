@@ -30,7 +30,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
   };
 };
 
-const MarketPlace = ({ data }) => {
+const MarketPlace = ({ data }: ProductsProp) => {
   return (
     <div>
       <HeadComponent />
