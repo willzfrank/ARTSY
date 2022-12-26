@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import Image from 'next/image';
 import style from '../styles/RightMarket.module.css';
+
 export default function MarketImage() {
   return (
     <div className={style.MarketImage}>
