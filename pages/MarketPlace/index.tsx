@@ -20,15 +20,15 @@ type ProductsProp = {
   url: string;
 };
 
-export const getServerSideProps: GetServerSideProps = async () => {
-  const data = await import('../../data/products.json');
-  console.log(data);
-  return {
-    props: {
-      data,
-    },
-  };
-};
+// export const getServerSideProps: GetServerSideProps = async () => {
+//   const data = await import('../../data/products.json');
+//   console.log(data);
+//   return {
+//     props: {
+//       data,
+//     },
+//   };
+// };
 
 const MarketPlace = ({ data }) => {
   return (

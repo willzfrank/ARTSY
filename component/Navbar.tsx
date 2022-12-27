@@ -4,9 +4,13 @@ import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Link from 'next/link';
 import styled from '../styles/Navbar.module.css';
+import { useAppSelector, useAppDispatch } from '../redux/hooks';
+import { setIsCartOpen } from '../redux/features/cartSlice';
 
 const Navbar = () => {
   const router = useRouter();
+  const dispatch = useAppDispatch();
+  const cart = useAppSelector((state) => state.cart.cart);
   const [isOpen, setIsOpen] = React.useState<boolean>(false);
 
   const toggleMenu = () => {
@@ -115,8 +119,14 @@ const Navbar = () => {
         <li className={styled.navListIcon}>
           <i className="uil uil-search"></i>
         </li>
-        <li className={styled.navListIcon}>
-          <i className="uil uil-shopping-cart-alt"></i>
+        <li
+          className={styled.navListIcon}
+          onClick={() => dispatch(setIsCartOpen())}
+        >
+          {cart.length}
+          <Link href="/Shipping">
+            <i className="uil uil-shopping-cart-alt"></i>
+          </Link>
         </li>
         <li className={`${styled.navListIcon} ${styled.bell}`}>
           <i className="uil uil-bell"></i>

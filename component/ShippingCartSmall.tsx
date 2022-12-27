@@ -1,8 +1,21 @@
 import React from 'react';
 import Image from 'next/image';
 import style from '../styles/Shipping.module.css';
+import { useAppSelector, useAppDispatch } from '../redux/hooks';
+import {
+  decreaseCount,
+  increaseCount,
+  removeFromCart,
+  setIsCartOpen,
+} from '../redux/features/cartSlice';
 
 export default function ShippingCartSmall() {
+  const dispatch = useAppDispatch();
+  const cart = useAppSelector((state) => state.cart.cart);
+
+  const totalPrice = cart.reduce((total, item) => {
+    return total + item.count * item.price;
+  }, 0);
   return (
     <div className={style.shippingBox}>
       <div className={style.shippingContainer}>
@@ -21,14 +34,17 @@ export default function ShippingCartSmall() {
               Size: <span>200 ft</span>
             </p>
             <div className={style.shippingCounter}>
-              <p>-</p>
+              <p onClick={() => dispatch(decreaseCount({ id }))}>-</p>
               <p>1</p>
-              <p>+</p>
+              <p onClick={() => dispatch(increaseCount({ id }))}>+</p>
             </div>
           </div>
         </div>
         <div className={style.shippingClose}>
-          <i className="uil uil-times-circle"></i>
+          <i
+            className="uil uil-times-circle"
+            onClick={() => dispatch(removeFromCart({ id }))}
+          ></i>
           <p>$35.50</p>
         </div>
       </div>
