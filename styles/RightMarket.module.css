@@ -4,7 +4,7 @@
   display: flex;
   gap: 53px;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 /* MARKETIMAGE */
@@ -13,6 +13,41 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 2%;
+  overflow: hidden;
+  width: auto;
+  position: relative;
+}
+
+.image .imageMain {
+  max-width: 100%;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+.image:hover .imageMain {
+  -webkit-transform: scale(1.05, 1.05);
+  -moz-transform: scale(1.05, 1.05);
+  transform: scale(1.05, 1.05);
+}
+.image:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: #000;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 2;
+  opacity: 0;
+  -moz-transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+.image:hover:before {
+  opacity: 1;
 }
 
 .imageMain {
