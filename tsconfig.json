@@ -21,7 +21,11 @@
     "**/*.tsx",
     "component/MarketImage.tsx",
     "sections/RightMarket.tsx",
-    "pages/MarketPlace/index.tsx"
+    "pages/MarketPlace/index.tsx",
+    "pages/Home.tsx",
+    "sections/Featured.tsx",
+    "pages/index.tsx",
+    "pages/Auction/index.tsx"
   ],
   "exclude": ["node_modules"]
 }

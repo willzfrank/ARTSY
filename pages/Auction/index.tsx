@@ -4,6 +4,8 @@ import { AuctionImage, Navbar } from '../../component';
 import style from '../../styles/MarketPlace.module.css';
 import classes from '../../styles/Auction.module.css';
 import { AuctionBidBox, AuctionImageBox } from '../../sections';
+import { GetServerSideProps } from 'next';
+
 function Auction() {
   return (
     <div>

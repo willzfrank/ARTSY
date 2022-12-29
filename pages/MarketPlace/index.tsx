@@ -4,7 +4,7 @@ import { Navbar, SearchComponentMarket } from '../../component';
 import { Footer, LeftMarrketPlace, RightMarket } from '../../sections';
 import styled from '../../styles/MarketPlace.module.css';
 
-type ProductsProp = {
+type Product = {
   id: string;
   name: string;
   creator: string;
@@ -20,17 +20,23 @@ type ProductsProp = {
   url: string;
 };
 
-// export const getServerSideProps: GetServerSideProps = async () => {
-//   const data = await import('../../data/products.json');
-//   console.log(data);
-//   return {
-//     props: {
-//       data,
-//     },
-//   };
-// };
+type MarketPlaceProps = {
+  products: Product[];
+};
 
-const MarketPlace = ({ data }) => {
+export const getServerSideProps: GetServerSideProps<
+  MarketPlaceProps
+> = async () => {
+  const { products } = await import('../../data/products');
+  console.log(products);
+  return {
+    props: {
+      products,
+    },
+  };
+};
+
+const MarketPlace = ({ products }: MarketPlaceProps) => {
   return (
     <div>
       <HeadComponent />
@@ -39,14 +45,14 @@ const MarketPlace = ({ data }) => {
         <p>
           Home/ Marketplace/<span> Editorials</span>
         </p>
-        <p>Showing 1-5 of 18 results{products.id}</p>
+        <p>Showing 1-5 of 18 results </p>
       </div>
       <SearchComponentMarket />
       <div className={styled.padding}>
         <LeftMarrketPlace />
-        <RightMarket />
+        <RightMarket products={products} />
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

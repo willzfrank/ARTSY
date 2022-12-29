@@ -4,7 +4,7 @@ import style from '../styles/Featured.module.css';
 const Featured = () => {
   return (
     <div className={style.featuredMain}>
-      <h2 className={style.featuredTitle}>Featured products</h2>
+      <h2 className={style.featuredTitle}>Featured products</h2>z
       <FeaturedProducts
         styledClass="FeaturedProductContainer"
         image="/Rectangle 299.png"

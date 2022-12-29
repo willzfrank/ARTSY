@@ -7,6 +7,7 @@ import profile4 from '../public/Ellipse 17.png';
 import profile5 from '../public/Ellipse 18.png';
 import styled from '../styles/Featured.module.css';
 import Link from 'next/link';
+import { GetServerSideProps } from 'next';
 
 type FeatureMainPropType = {
   styledClass: string;
