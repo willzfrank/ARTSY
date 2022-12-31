@@ -1,4 +1,4 @@
-import { GetServerSideProps } from 'next';
+import { GetServerSideProps, GetStaticProps } from 'next';
 import HeadComponent from '../../app/Head';
 import { Navbar, SearchComponentMarket } from '../../component';
 import { Footer, LeftMarrketPlace, RightMarket } from '../../sections';
@@ -24,11 +24,8 @@ type MarketPlaceProps = {
   products: Product[];
 };
 
-export const getServerSideProps: GetServerSideProps<
-  MarketPlaceProps
-> = async () => {
+export const getStaticProps: GetStaticProps<MarketPlaceProps> = async () => {
   const { products } = await import('../../data/products');
-  console.log(products);
   return {
     props: {
       products,
