@@ -39,7 +39,7 @@ function RightMarket({ products }: marketPlaceMainPropType) {
               />
             </div>
             <div className={style.mobileFlex}>
-              <h2>{product.name}</h2>
+              <h2 className={style.mobileFlexName}>{product.name}</h2>
               <h3>${product.price.usd}</h3>
             </div>
           </div>

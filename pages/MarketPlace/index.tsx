@@ -49,6 +49,10 @@ const MarketPlace = ({ products }: MarketPlaceProps) => {
         <LeftMarrketPlace />
         <RightMarket products={products} />
       </div>
+      <div className={styled.rightMarketButtonBox}>
+        <button className={styled.rightMarketButton}>See more</button>
+      </div>
+
       {/* <Footer /> */}
     </div>
   );

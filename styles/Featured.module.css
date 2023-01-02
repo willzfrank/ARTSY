@@ -1,44 +1,48 @@
 .FeaturedProductContainer {
   display: flex;
   gap: 37px;
-  /* align-items: center; */
   justify-content: center;
   border-top: 0.5px solid #333333;
   padding: 60px 0;
 }
 
-.MainFeaturedImage {
-  position: relative;
-  color: transparent;
-  border: transparent;
-}
-
-.MainFeaturedImage:hover {
-  color: white;
+.MainFeaturedImage:hover .InnerFeaturedImage h2 {
+  display: flex;
+  transition: 0.5s ease-in-out;
 }
 
 .Imagearrow {
-  border: none;
-}
-
-.Imagearrow:hover {
-  border: 1px solid #ccc;
+  border: 2px solid white;
+  font-weight: bolder;
 }
 
 .InnerFeaturedImage {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /* color: white; */
-  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 610px;
+  height: 305px;
   font-family: Clash Display;
-  font-size: 30px;
 }
+
+.InnerFeaturedImage h2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-style: normal;
+  font-weight: 400;
+  width: 100%;
+  font-size: 2.5rem;
+  color: #ffffff;
+  cursor: pointer;
+  display: none;
+  transition: 0.5s ease-in-out;
+}
+
 .Imagearrow {
-  position: absolute;
+  /* position: absolute;
   right: 0%;
-  top: 30%;
+  top: 30%; */
   font-size: 1rem;
   background: transparent;
   /* border: 1px solid #ccc; */
@@ -51,10 +55,10 @@
   cursor: pointer;
 }
 
-.FeaturedImage:hover {
+.InnerFeaturedImage:hover {
   cursor: pointer;
-  transition: 0.2s;
-  filter: blur(2px) brightness(60%);
+  transition: 0.5s ease-in-out;
+  filter: brightness(85%);
 }
 .rowReverse {
   display: flex;
@@ -140,7 +144,7 @@
   top: 20%;
   font-size: 1rem;
   background: transparent;
-  border: 1px solid #ccc;
+  border: 1px solid black;
   border-radius: 50%;
   width: 3rem;
   height: 3rem;
@@ -190,18 +194,36 @@
   }
 
   .InnerFeaturedImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px !important;
+    height: 305px;
     font-size: 20px;
   }
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
-  .featuredMain {
-    padding: 0px;
+  .InnerFeaturedImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 305px;
+    font-family: Clash Display;
   }
 
-  .FeaturedImage {
-    width: 100%;
-    height: 255px;
+  .InnerFeaturedImage:hover {
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    filter: brightness(85%);
+  }
+
+  .featuredMain {
+    padding: 0px 20px;
+  }
+
+  .MainFeaturedImage {
     padding-top: 30px;
   }
 
@@ -236,7 +258,30 @@
 
 @media (max-width: 768px) {
   .InnerFeaturedImage {
-    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 343px;
+    height: 305px;
+    font-family: Clash Display;
+  }
+
+  .MainFeaturedImage {
+    padding-top: 30px;
+  }
+
+  .InnerFeaturedImage h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 400;
+    width: 50%;
+    font-size: 1.5rem;
+    color: #ffffff;
+    cursor: pointer;
+    display: none;
+    transition: 0.5s ease-in-out;
   }
 
   .featuredMain {
@@ -250,12 +295,6 @@
     font-weight: 700;
     line-height: 44px;
     letter-spacing: 0em;
-  }
-
-  .FeaturedImage {
-    width: 100%;
-    height: 255px;
-    padding-top: 30px;
   }
 
   .FeaturedProductTitle {

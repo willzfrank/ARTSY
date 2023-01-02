@@ -33,22 +33,42 @@ export const MarketCategory = () => {
                 Editorials
               </label>
               <label htmlFor="" className={style.categoryContainer}>
-                <input type="checkbox" name="" id="" />
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  className={style.checkmarkBox}
+                />
                 <span className={style.checkmark}></span>
                 Fashion
               </label>
               <label htmlFor="" className={style.categoryContainer}>
-                <input type="checkbox" name="" id="" />
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  className={style.checkmarkBox}
+                />
                 <span className={style.checkmark}></span>
                 Optics
               </label>
               <label htmlFor="" className={style.categoryContainer}>
-                <input type="checkbox" name="" id="" />
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  className={style.checkmarkBox}
+                />
                 <span className={style.checkmark}></span>
                 Art & Museum
               </label>
               <label htmlFor="" className={style.categoryContainer}>
-                <input type="checkbox" name="" id="" />
+                <input
+                  type="checkbox"
+                  name=""
+                  id=""
+                  className={style.checkmarkBox}
+                />
                 <span className={style.checkmark}></span>
                 Nature
               </label>

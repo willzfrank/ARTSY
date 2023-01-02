@@ -1,3 +1,36 @@
+.upcomingActionBox {
+  position: relative;
+}
+
+.arrowContainerAuction {
+  display: flex;
+  position: absolute;
+  gap: 20px;
+  width: max-content;
+  bottom: 0;
+  right: 17%;
+}
+.AuctionarrowContainer {
+  font-size: 1rem;
+  border: 1px solid linear-gradient(180deg, #aeaeae 0%, #202020 100%);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 7.77035px 7.77035px 11.6555px rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  backdrop-filter: blur(7.77035px);
+  transition: 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: white;
+}
+
+.AuctionarrowContainer:hover {
+  background-color: rgba(255, 255, 255, 0.53);
+  color: #050505;
+}
 .upcoming {
   background: linear-gradient(
     99.99deg,
@@ -125,7 +158,8 @@
 }
 
 @media (max-width: 768px) {
-  .upcomingHeader {
+  .upcomingHeader,
+  .arrowContainerAuction {
     display: none;
   }
 

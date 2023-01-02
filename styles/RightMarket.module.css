@@ -7,6 +7,10 @@
   justify-content: flex-start;
 }
 
+.mobileFlexName {
+  text-transform: uppercase !important;
+}
+
 /* MARKETIMAGE */
 .image {
   padding-top: 10px;
@@ -38,13 +42,13 @@
   top: 0;
   left: 0;
   position: absolute;
-  background: #000;
   background: rgba(0, 0, 0, 0.3);
   z-index: 2;
   opacity: 0;
   -moz-transition: 0.5s ease;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
+  border-radius: 8px;
 }
 .image:hover:before {
   opacity: 1;
@@ -85,7 +89,18 @@
 }
 
 @media (max-width: 1000px) {
+  .image:before {
+    visibility: hidden;
+  }
+  .image {
+    margin: 0;
+    position: static;
+  }
   .rightMarketMain {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-wrap: wrap;
     width: 100%;
     gap: 45px;
   }

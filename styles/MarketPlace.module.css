@@ -10,7 +10,7 @@
 }
 
 .padding {
-  padding: 0px 50px;
+  padding: 0px 60px;
   display: flex;
   gap: 150px;
 }
@@ -18,6 +18,35 @@
 .marketPlaceSearch {
   width: 30%;
   position: relative;
+}
+
+.rightMarketButton {
+  border: 1px solid #333333;
+  width: 249px;
+  height: 73px;
+  font-family: Satoshi;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 41px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #333333;
+  border-radius: 0.625rem;
+  transition: 0.5s ease-in-out;
+}
+
+.rightMarketButton:hover {
+  background-color: #686868;
+  color: white;
+  cursor: pointer;
+}
+
+.rightMarketButtonBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 160px 0;
 }
 
 .marketPlaceSearchInput {
@@ -65,12 +94,30 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
   gap: 7px;
   cursor: pointer;
   border: 0.5px solid #292929;
   padding: 0px 20px;
   border-radius: 9px;
   margin: 5px 0;
+}
+
+.marketPlaceSortContentList {
+  position: absolute;
+  box-shadow: 4px 4px 64px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  width: 10rem;
+  background: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(1.094rem);
+  padding: 2rem;
+  transition: 0.5s ease-in-out;
+  bottom: -462px;
+}
+
+.marketPlaceSortContentList p:hover {
+  background-color: #292929;
+  color: white;
 }
 
 .marketPlaceSortResult {
@@ -309,6 +356,25 @@
 /* MOBILE */
 
 @media (min-width: 320px) and (max-width: 979px) {
+  .filterDropdown {
+    position: absolute;
+    width: 15rem;
+    background: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(1.094rem);
+    padding: 2rem;
+    transition: 0.5s ease-in-out;
+    bottom: 40px;
+    z-index: 10;
+    color: white;
+  }
+
+  .filterDropdown .checkmarkContainer .categoryContainer:hover {
+    background-color: #292929;
+    color: white;
+  }
+  .marketPlaceSortContentList {
+    color: white;
+  }
   .CartExplore {
     box-shadow: 4px 4px 64px 0px #00000014;
     margin: 50px 0px;
@@ -463,6 +529,18 @@
 }
 
 @media (min-width: 320px) and (max-width: 979px) {
+  .filterDropdown {
+    position: absolute;
+    width: 15rem;
+    background: rgba(0, 0, 0, 0);
+    backdrop-filter: blur(1.094rem);
+    padding: 2rem;
+    transition: 0.5s ease-in-out;
+    bottom: -320px;
+    left: 0;
+    z-index: 10;
+    color: white;
+  }
   .AddCart {
     border-top: 1px solid #333333;
     border-radius: 0px;
@@ -488,6 +566,10 @@
   /* .AddCartContainer {
     width: 60%;
   } */
+
+  .padding {
+    padding: 0px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 979px) {

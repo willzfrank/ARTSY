@@ -26,7 +26,7 @@
   flex-direction: column;
   width: 100%;
   gap: 15px;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
 }
 
 .categoryContainer {
@@ -39,6 +39,17 @@
   line-height: 32px;
   letter-spacing: 0em;
   text-align: left;
+}
+
+.checkmarkBox {
+  margin-right: 2rem;
+  width: 1.625rem;
+  height: 1.625rem;
+  color: black;
+  border-radius: 0.3rem;
+  border: none;
+  outline: none;
+  accent-color: #d9d9d9;
 }
 
 /* .checkmarkBox {

@@ -15,7 +15,7 @@ export default function HeroSwiper() {
           spaceBetween={0}
           slidesPerView={1}
           autoplay={{
-            delay: 2500,
+            delay: 50,
             disableOnInteraction: false,
           }}
           centeredSlides={true}

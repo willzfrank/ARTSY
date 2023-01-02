@@ -13,28 +13,28 @@ type FeatureMainPropType = {
   image: string;
 };
 
-function FeaturedProducts(props: FeatureMainPropType) {
+function FeaturedProducts({ styledClass, image }: FeatureMainPropType) {
   return (
-    <div className={props.styledClass}>
+    <div className={styledClass}>
       <div className={styled.MainFeaturedImage}>
         <Link href="/MarketPlace">
-          <Image
-            src={props.image}
-            alt=""
-            width={610}
-            height={305}
-            className={styled.FeaturedImage}
-          />
+          <div className={`${styled.InnerFeaturedImage} inner-featured-image`}>
+            <h2>
+              View Products
+              <div className={styled.arrowContainer}>
+                <i className={`${styled.Imagearrow} uil uil-arrow-right`}></i>
+              </div>
+            </h2>
+            <style jsx>{`
+              .inner-featured-image {
+                background-image: url('${image}');
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+              }
+            `}</style>
+          </div>
         </Link>
-
-        <div className={styled.InnerFeaturedImage}>
-          <h2>
-            View Products
-            <div className={styled.arrowContainer}>
-              <i className={`${styled.Imagearrow} uil uil-arrow-right`}></i>
-            </div>
-          </h2>
-        </div>
       </div>
       <div className={styled.mobileFeaturedProduct}>
         <h2 className={styled.FeaturedProductTitle}>The Boolean Egyptian</h2>
@@ -80,13 +80,9 @@ function FeaturedProducts(props: FeatureMainPropType) {
               height={45}
               className={styled.FeaturedProfileImg4}
             />
-            {/* <Image src={profile6} alt="" width={51} height={305} /> */}
           </div>
           <p className={styled.FeaturedProductText}>64 major creators</p>
           <div className={styled.arrowContainer}>
-            {/* <i
-              className={`${styled.FeaturedIcon} uil uil-arrow-circle-right`}
-            ></i> */}
             <i className={`${styled.arrow} uil uil-arrow-right`}></i>
           </div>
         </div>
