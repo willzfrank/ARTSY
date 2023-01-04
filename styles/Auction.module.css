@@ -102,6 +102,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 22px;
+  border-radius: 10px;
+  background: #f6f4f4;
 }
 
 .auctionBidButtonBox button {

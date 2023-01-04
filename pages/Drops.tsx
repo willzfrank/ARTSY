@@ -4,8 +4,41 @@ import { DropComponent, Navbar } from '../component';
 import { Footer } from '../sections';
 import style from '../styles/Drop.module.css';
 import Link from 'next/link';
+import { GetStaticProps } from 'next';
 
-export default function Drops() {
+type Drop = {
+  id: string;
+  title: string;
+  creator: string;
+  desc: string;
+  img: string;
+  active: string;
+  auction: {
+    time: string;
+    date: string;
+  };
+  date: {
+    day: number;
+    month: string;
+    time: string;
+    timezone: string;
+  };
+};
+
+type DropsProps = {
+  drops: Drop[];
+};
+
+export const getStaticProps: GetStaticProps<DropsProps> = async () => {
+  const { drops } = await import('../data/drops');
+  return {
+    props: {
+      drops,
+    },
+  };
+};
+
+const Drops: React.FC<DropsProps> = ({ drops }) => {
   return (
     <div className={style.dropMainBox}>
       <HeadComponent />
@@ -24,13 +57,10 @@ export default function Drops() {
           <p>Notify me</p>
         </div>
       </div>
-
-      <DropComponent />
-      <DropComponent />
-      <DropComponent />
-      <DropComponent />
-
+      <DropComponent drops={drops} />
       <Footer />
     </div>
   );
-}
+};
+
+export default Drops;

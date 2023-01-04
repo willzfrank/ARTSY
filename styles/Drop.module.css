@@ -73,8 +73,8 @@
   position: absolute;
   width: 578px;
   height: 131px;
-  bottom: 20px;
-  left: 53px;
+  bottom: 30px;
+  left: 13px;
   color: white;
 }
 
@@ -102,8 +102,20 @@
   font-size: 24px;
 }
 
-.dropTimeCount3 {
-  background: #4693ed !important;
+.dropBox {
+  padding: 70px 131px;
+}
+
+.dropContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 42px;
+  padding: 25px 0px;
+}
+
+.viewBtn {
+  background: #b8babc;
   padding: 0px 30px;
   text-align: center;
   border-radius: 15px;
@@ -111,16 +123,20 @@
   cursor: pointer;
 }
 
-.dropBox {
-  padding: 50px 131px;
+.viewBtn p {
+  cursor: not-allowed;
 }
 
-.dropContainer {
-  display: flex;
-  gap: 42px;
+.joinBtn {
+  background: #4693ed;
+  padding: 0px 30px;
+  text-align: center;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-.dropContainerTop {
+.dropContainerUpcoming {
   background: #4693ed;
   border-radius: 10px;
   width: 190px;
@@ -133,9 +149,45 @@
   font-weight: 500;
   line-height: 22px;
   letter-spacing: 0em;
-  cursor: pointer;
   color: white;
   margin-bottom: 33px;
+  text-transform: uppercase;
+}
+
+.dropContainerLive {
+  background: #3ea03b;
+  border-radius: 10px;
+  width: 190px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  color: white;
+  margin-bottom: 33px;
+  text-transform: uppercase;
+}
+
+.dropContainerEnded {
+  background: #999ea5;
+  border-radius: 10px;
+  width: 190px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  color: white;
+  margin-bottom: 33px;
+  text-transform: uppercase;
 }
 
 .dropText1 {
@@ -153,6 +205,7 @@
   line-height: 49px;
   letter-spacing: 0em;
   text-align: left;
+  text-transform: capitalize;
 }
 
 .dropText3 {
@@ -172,6 +225,7 @@
   letter-spacing: 0em;
   text-align: left;
   margin-top: 33px;
+  text-transform: capitalize;
 }
 
 .dropText4 span {
@@ -332,7 +386,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 979px) {
   .dropTimeCount1 {
     font-family: Satoshi;
     font-size: 16px;

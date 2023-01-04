@@ -21,10 +21,14 @@
   display: flex;
   gap: 90px;
   position: absolute;
-  top: -43px;
+  top: -40px;
 }
 
-.marketLink p:first-child {
+.marketLinkContent p {
+  padding: 0px 10px;
+}
+
+.marketLinkStyling {
   font-family: Satoshi;
   /* font-size: 24px; */
   font-weight: 500;
@@ -33,6 +37,26 @@
   color: #292929;
   border-bottom: 2px solid #292929;
   padding-bottom: 5px;
+}
+
+.marketLinkShipping {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 88px;
+  position: relative;
+  padding: 0;
+  width: 603px;
+  border-bottom: 0.5px solid #747474;
+}
+
+.cartHover:hover {
+  background-color: #c7c6c6;
+  padding: 0px 10px;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  color: #292929 !important;
+  border-radius: 2px;
 }
 
 /* SHOPPING CART */
