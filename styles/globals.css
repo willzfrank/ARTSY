@@ -24,6 +24,10 @@ li {
   list-style-type: none;
 }
 
+.red {
+  color: red;
+}
+
 .FeaturedProductContainer {
   display: flex;
   gap: 37px;
