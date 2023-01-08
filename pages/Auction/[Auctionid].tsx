@@ -1,10 +1,48 @@
-import { style, StyledEngineProvider } from '@mui/system';
 import Image from 'next/image';
 import React from 'react';
 import HeadComponent from '../../app/Head';
 import styled from '../../styles/Auction.module.css';
 
-export default function Bid() {
+import { GetStaticPaths, GetStaticProps } from 'next';
+
+type Auction = {
+  id: string;
+  url: string;
+};
+
+type AuctionProps = {
+  auction: Auction[];
+};
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const { auction } = await import('../../data/auction');
+  const pathItem = auction.map((item) => {
+    return {
+      params: {
+        Auctionid: item.id.toString(),
+      },
+    };
+  });
+
+  // console.log(pathItem);
+  return {
+    paths: pathItem,
+    fallback: false,
+  };
+};
+
+export const getStaticProps: GetStaticProps = async (context) => {
+  const id = context.params?.Auctionid;
+  const { auction } = await import('../../data/auction');
+  const data = auction.filter((item) => item.id === id);
+  console.log(data);
+  // console.log(context);
+  return {
+    props: { data },
+  };
+};
+
+const Bid: React.FC<AuctionProps> = ({ auction }) => {
   return (
     <div>
       <HeadComponent />
@@ -16,7 +54,7 @@ export default function Bid() {
         </div>
         <div className={styled.BidBox}>
           <div className={styled.BidBoxImg}>
-            <Image src="/Rectangle 247.png" alt="" width={622} height={800} />
+            <Image src={''} alt="" width={622} height={800} />
           </div>
           <div className={styled.BidBoxChatBox}>
             <div className={styled.BidBoxChatBody}>
@@ -226,4 +264,6 @@ export default function Bid() {
       </div>
     </div>
   );
-}
+};
+
+export default Bid;
