@@ -3,8 +3,18 @@ import Image from 'next/image';
 import React from 'react';
 import HeadComponent from '../../app/Head';
 import styled from '../../styles/Auction.module.css';
+import { useRouter } from 'next/router';
 
-export default function Bid() {
+type Auction = {
+  id: string;
+  url: string;
+};
+
+export default function Bid(data: Auction) {
+  const router = useRouter();
+  const Auctionid = router.query.Auctionid;
+
+  console.log(Auctionid);
   return (
     <div>
       <HeadComponent />
@@ -16,8 +26,9 @@ export default function Bid() {
         </div>
         <div className={styled.BidBox}>
           <div className={styled.BidBoxImg}>
-            <Image src="/Rectangle 247.png" alt="" width={622} height={800} />
+            <Image src="" alt="" width={622} height={800} />
           </div>
+
           <div className={styled.BidBoxChatBox}>
             <div className={styled.BidBoxChatBody}>
               <div className={styled.BidBoxChatProfile}>

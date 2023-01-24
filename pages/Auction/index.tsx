@@ -47,6 +47,22 @@ export const getStaticProps: GetStaticProps = async () => {
   };
 };
 
+export async function getStaticPaths() {
+  const { auction } = await import('../../data/auction');
+  const allPaths = auction.map((e) => {
+    return {
+      params: {
+        Auctionid: e.id.toString(),
+      },
+    };
+  });
+  // console.log(allPaths);
+  return {
+    path: allPaths,
+    
+  };
+}
+
 const Auction: React.FC<Props> = ({ auction, bids }) => {
   return (
     <div>

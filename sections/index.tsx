@@ -10,6 +10,7 @@ import AuctionImageBox from './AuctionImageBox';
 import AuctionBidBox from './AuctionBidBox';
 import ShippingComponent from './ShippingComponent';
 import Creators from './Creators';
+import PaymentComponent from './PaymentComponent';
 
 export {
   HeroHome,
@@ -24,4 +25,5 @@ export {
   AuctionBidBox,
   ShippingComponent,
   Creators,
+  PaymentComponent,
 };
