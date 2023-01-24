@@ -13,6 +13,19 @@ function PaymentComponent({}: Props) {
   };
   return (
     <section>
+      <p className={styled.pagination}>
+        Home/ Marketplace/ Cart/ Shipping/<span>Payment</span>
+      </p>
+      <h1 className={styled.paymentMobileContainerTitle}>
+        <Image
+          src="/padlock.png"
+          alt="padlock"
+          width={14}
+          height={19}
+          className={styled.securedimg}
+        />
+        Secure server
+      </h1>
       <div className={styled.paymentHeader}>
         <h1 className={styled.paymentContainerTitle}>Payment method</h1>
         <h1 className={styled.paymentContainerTitle}>
@@ -46,7 +59,11 @@ function PaymentComponent({}: Props) {
                   Select your wallet
                 </h3>
               </div>
-              <div className="chooseWallet">
+              <p className={styled.selectMobileWalletText}>
+                Connect with one of our available wallet providers or add and
+                connect a new wallet.{' '}
+              </p>
+              <div className={styled.chooseWallet}>
                 <Image
                   src="/MetaMask - jpeg.png"
                   alt="MetaMask"
@@ -98,11 +115,11 @@ function PaymentComponent({}: Props) {
               </div>
             </div>
 
-            <div className="keyInput">
+            <div className={styled.walletInput}>
               <label htmlFor="key type" className={styled.walletInputLabel}>
                 Key
               </label>
-              <div className="keyInput_Container">
+              <div className={styled.keyInput_Container}>
                 <input
                   type="text"
                   name=""
@@ -115,6 +132,7 @@ function PaymentComponent({}: Props) {
                   alt="MetaMask"
                   width={38}
                   height={38}
+                  className={styled.walletInputBarImg}
                 />
               </div>
             </div>
