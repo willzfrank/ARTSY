@@ -1,6 +1,11 @@
+'use client';
+
 import Image from 'next/image';
 import React from 'react';
 import styled from '../styles/MarketPlace.module.css';
+import { addToBasket } from '../redux/features/basketSlice';
+import { toast } from 'react-hot-toast';
+import { useDispatch } from 'react-redux';
 
 export default function AddCart() {
   const [isOpen, setOpen] = React.useState(false);
@@ -23,6 +28,14 @@ export default function AddCart() {
     setStatusOpen(!isStatusOpen);
     setOpen(false);
     setListingOpen(false);
+  };
+
+  const dispatch = useDispatch();
+  const addItemToBasket = (product: Product) => {
+    dispatch(addToBasket(product));
+    toast.success(`${product.name} added to basket`, {
+      position: 'bottom-center',
+    });
   };
 
   return (

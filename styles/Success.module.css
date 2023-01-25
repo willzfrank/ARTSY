@@ -1,0 +1,102 @@
+.congrats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.color1 {
+  position: absolute;
+  border-radius: 80px;
+  background-color: #006ca2;
+  height: 80px;
+  width: 78px;
+  left: 10px;
+  top: 120px;
+}
+
+.color2 {
+  position: absolute;
+  height: 80px;
+  width: 78px;
+  left: 191px;
+  top: 104px;
+  border-radius: 60px;
+  background-color: #9b62ec;
+}
+
+.color3 {
+  position: absolute;
+  height: 128px;
+  width: 147px;
+  left: 256px;
+  top: 280px;
+  border-radius: 70px;
+  background-color: rgba(226, 118, 37, 0.6);
+}
+
+.congrats h2 {
+  font-family: Satoshi;
+  font-size: 41px;
+  font-weight: 500;
+  line-height: 64px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: black;
+}
+
+.congrats p {
+  font-family: Satoshi;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 0;
+}
+
+.congrats p span {
+  background: linear-gradient(
+    246.91deg,
+    #006ca2 13.63%,
+    rgba(192, 86, 9, 0.49) 67.89%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 320px) and (max-width: 979px) {
+  .congrats h2 {
+    font-family: Satoshi;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+
+  .congratsImage {
+    width: 275px;
+    height: 246px;
+    margin-top: 50px;
+  }
+
+  .congrats p {
+    font-family: Satoshi;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+}

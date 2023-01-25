@@ -33,7 +33,7 @@ export const products = [
       eth: 0.09,
     },
     size: {
-      ft: 200,
+      ft: 210,
     },
     url: 'https://images.unsplash.com/photo-1667338444771-c5112047b2a6?crop=entropy&cs=tinysrgb&fm=jpg&ixid=Mnw3MjAxN3wwfDF8YWxsfDE4fHx8fHx8Mnx8MTY2NzY0Nzg1MQ&ixlib=rb-4.0.3&q=80&q=85&fmt=jpg&crop=entropy&cs=tinysrgb&w=450',
   },
@@ -48,7 +48,7 @@ export const products = [
       eth: 0.09,
     },
     size: {
-      ft: 200,
+      ft: 250,
     },
     url: 'https://images.unsplash.com/photo-1545109281-be4a17120061?crop=entropy&cs=tinysrgb&fm=jpg&ixid=Mnw3MjAxN3wwfDF8c2VhcmNofDQxfHxlZ3lwdCUyMGFydHxlbnwwfHx8fDE2NjU5NjI1MDI&ixlib=rb-1.2.1&q=80&q=85&fmt=jpg&crop=entropy&cs=tinysrgb&w=450',
   },
@@ -63,7 +63,7 @@ export const products = [
       eth: 0.09,
     },
     size: {
-      ft: 200,
+      ft: 300,
     },
     url: 'https://images.unsplash.com/photo-1473286835901-04adb1afab03?crop=entropy&cs=tinysrgb&fm=jpg&ixid=Mnw3MjAxN3wwfDF8c2VhcmNofDc4fHx2aW50YWdlfGVufDB8fHx8MTY2NTc5NDA3OA&ixlib=rb-1.2.1&q=80&q=85&fmt=jpg&crop=entropy&cs=tinysrgb&w=450',
   },
@@ -78,7 +78,7 @@ export const products = [
       eth: 0.09,
     },
     size: {
-      ft: 200,
+      ft: 340,
     },
     url: 'https://images.unsplash.com/photo-1542038784456-1ea8e935640e?crop=entropy&cs=tinysrgb&fm=jpg&ixid=Mnw3MjAxN3wwfDF8c2VhcmNofDR8fHBob3RvZ3JhcGh5fGVufDB8fHx8MTY2NTczOTQ5Ng&ixlib=rb-1.2.1&q=80&q=85&fmt=jpg&crop=entropy&cs=tinysrgb&w=450',
   },
@@ -93,7 +93,7 @@ export const products = [
       eth: 0.09,
     },
     size: {
-      ft: 200,
+      ft: 204,
     },
     url: 'https://images.unsplash.com/photo-1579618218290-24a26f63a738?crop=entropy&cs=tinysrgb&fm=jpg&ixid=Mnw3MjAxN3wwfDF8c2VhcmNofDIyfHx2aW50YWdlfGVufDB8fHx8MTY2NTc0NTA1NA&ixlib=rb-1.2.1&q=80&q=85&fmt=jpg&crop=entropy&cs=tinysrgb&w=450',
   },
@@ -108,7 +108,7 @@ export const products = [
       eth: 0.09,
     },
     size: {
-      ft: 200,
+      ft: 260,
     },
     url: 'https://images.unsplash.com/photo-1665708385751-0e2e5a72e06e?crop=entropy&cs=tinysrgb&fm=jpg&ixid=Mnw3MjAxN3wwfDF8YWxsfDg1fHx8fHx8Mnx8MTY2NTc5MjM3MA&ixlib=rb-1.2.1&q=80&q=85&fmt=jpg&crop=entropy&cs=tinysrgb&w=450',
   },
@@ -123,7 +123,7 @@ export const products = [
       eth: 0.09,
     },
     size: {
-      ft: 200,
+      ft: 700,
     },
     url: 'https://images.unsplash.com/photo-1501472312651-726afe119ff1?crop=entropy&cs=tinysrgb&fm=jpg&ixid=Mnw3MjAxN3wwfDF8c2VhcmNofDI2fHxhcnR8ZW58MHx8fHwxNjY1Nzg0NjU0&ixlib=rb-1.2.1&q=80&q=85&fmt=jpg&crop=entropy&cs=tinysrgb&w=450',
   },
@@ -153,7 +153,7 @@ export const products = [
       eth: 0.09,
     },
     size: {
-      ft: 200,
+      ft: 100,
     },
     url: 'https://images.unsplash.com/photo-1501786223405-6d024d7c3b8d?crop=entropy&cs=tinysrgb&fm=jpg&ixid=Mnw3MjAxN3wwfDF8cmFuZG9tfHx8fHx8fHx8MTY2NTc5NDQ0OQ&ixlib=rb-1.2.1&q=80&q=85&fmt=jpg&crop=entropy&cs=tinysrgb&w=450',
   },
@@ -168,7 +168,7 @@ export const products = [
       eth: 3.2,
     },
     size: {
-      ft: 200,
+      ft: 403,
     },
     url: 'https://images.unsplash.com/photo-1665873806985-9b487caa672e?crop=entropy&cs=tinysrgb&fm=jpg&ixid=Mnw3MjAxN3wwfDF8YWxsfDIwfHx8fHx8Mnx8MTY2NTk1NDA0MA&ixlib=rb-1.2.1&q=80&q=85&fmt=jpg&crop=entropy&cs=tinysrgb&w=450',
   },
@@ -183,7 +183,7 @@ export const products = [
       eth: 0.03,
     },
     size: {
-      ft: 200,
+      ft: 246,
     },
     url: 'https://images.unsplash.com/photo-1665873845039-addf16e6e180?crop=entropy&cs=tinysrgb&fm=jpg&ixid=Mnw3MjAxN3wwfDF8YWxsfDk0fHx8fHx8Mnx8MTY2NjAwMjkwMw&ixlib=rb-1.2.1&q=80&q=85&fmt=jpg&crop=entropy&cs=tinysrgb&w=450',
   },
@@ -198,7 +198,7 @@ export const products = [
       eth: 0.49,
     },
     size: {
-      ft: 200,
+      ft: 140,
     },
     url: 'https://images.unsplash.com/photo-1666905683871-ee824bfb3d29?crop=entropy&cs=tinysrgb&fm=jpg&ixid=Mnw3MjAxN3wwfDF8YWxsfDI1fHx8fHx8Mnx8MTY2Njk1ODQxNA&ixlib=rb-4.0.3&q=80&q=85&fmt=jpg&crop=entropy&cs=tinysrgb&w=450',
   },
@@ -213,7 +213,7 @@ export const products = [
       eth: 0.09,
     },
     size: {
-      ft: 200,
+      ft: 530,
     },
     url: 'https://images.unsplash.com/photo-1667337395744-7d6d829438e0?crop=entropy&cs=tinysrgb&fm=jpg&ixid=Mnw3MjAxN3wwfDF8YWxsfDEyOHx8fHx8fDJ8fDE2Njc1NzU5MzU&ixlib=rb-4.0.3&q=80&q=85&fmt=jpg&crop=entropy&cs=tinysrgb&w=450',
   },
@@ -228,7 +228,7 @@ export const products = [
       eth: 0.09,
     },
     size: {
-      ft: 200,
+      ft: 160,
     },
     url: 'https://images.unsplash.com/photo-1665808044552-102b98dbdda6?crop=entropy&cs=tinysrgb&fm=jpg&ixid=Mnw3MjAxN3wwfDF8YWxsfDgwfHx8fHx8Mnx8MTY2NTk1NDAzMA&ixlib=rb-1.2.1&q=80&q=85&fmt=jpg&crop=entropy&cs=tinysrgb&w=450',
   },

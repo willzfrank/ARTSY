@@ -1,6 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { toast } from 'react-hot-toast';
+import { useDispatch } from 'react-redux';
 import { MarketImage } from '../component';
+import { addToBasket } from '../redux/features/basketSlice';
 import style from '../styles/RightMarket.module.css';
 
 type Product = {
@@ -24,10 +27,21 @@ type marketPlaceMainPropType = {
 };
 
 function RightMarket({ products }: marketPlaceMainPropType) {
+  const dispatch = useDispatch();
+  const addItemToBasket = (product: Product) => {
+    dispatch(addToBasket(product));
+    toast.success(`${product.name} added to basket`, {
+      position: 'bottom-center',
+    });
+  };
   return (
     <div className={style.rightMarketMain}>
       {products.map((product) => (
-        <Link key={product.id} href={`/MarketPlace/${product.id}`}>
+        <Link
+          key={product.id}
+          href={`/MarketPlace/${product.id}`}
+          onClick={() => addItemToBasket(product)}
+        >
           <div className={style.MarketImage}>
             <div className={style.image}>
               <Image

@@ -40,6 +40,26 @@
   padding: 10px;
   font-size: 24px;
   cursor: pointer;
+  position: relative;
+}
+
+.iconBadge {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  background-image: linear-gradient(
+    to right,
+    #006ca2 13.63%,
+    rgba(192, 86, 9, 0.49) 67.89%
+  );
+  top: 7px;
+  right: 0px;
+  height: 16px;
+  width: 16px;
+  font-size: 10px;
+  color: white;
 }
 
 .toggle {

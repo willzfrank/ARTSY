@@ -4,6 +4,8 @@ import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Link from 'next/link';
 import styled from '../styles/Navbar.module.css';
+import { useSelector } from 'react-redux';
+import { selectBasketItems } from '../redux/features/basketSlice';
 
 const Navbar = () => {
   const router = useRouter();
@@ -12,6 +14,8 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  const items = useSelector(selectBasketItems);
   return (
     <nav className={styled.nav}>
       {isOpen && (
@@ -116,7 +120,22 @@ const Navbar = () => {
           <i className="uil uil-search"></i>
         </li>
         <li className={styled.navListIcon}>
-          <i className="uil uil-shopping-cart-alt"></i>
+          <div>
+            {items.length >= 1 ? (
+              <Link href="/Cart">
+                <li className={styled.navListIcon}>
+                  <i className="uil uil-shopping-cart-alt"></i>
+                  <span className={styled.iconBadge}>{items.length}</span>
+                </li>
+              </Link>
+            ) : (
+              <Link href="/Cart">
+                <li className={styled.navListIcon}>
+                  <i className="uil uil-shopping-cart-alt"></i>
+                </li>
+              </Link>
+            )}
+          </div>
         </li>
         <li className={`${styled.navListIcon} ${styled.bell}`}>
           <i className="uil uil-bell"></i>
