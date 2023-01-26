@@ -169,6 +169,7 @@
 
 .shoppingCounter {
   display: flex;
+  align-items: center;
   gap: 40px;
   font-family: Satoshi;
   font-size: 20px;
@@ -180,6 +181,17 @@
 .shoppingCounter p:nth-child(3),
 .shoppingClose i {
   cursor: pointer;
+}
+
+.shoppingCounter p:nth-child(1),
+.shoppingCounter p:nth-child(3) {
+  background-color: #b6b5b5;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
 }
 
 .shoppingClose {
