@@ -1,7 +1,9 @@
 import React from 'react';
 import style from '../styles/Shipping.module.css';
+import { useRouter } from 'next/router';
 
 export default function ShippingForm() {
+  const router = useRouter();
   return (
     <div className={style.shippingForm}>
       <div className={style.shippingFormContent}>
@@ -48,7 +50,12 @@ export default function ShippingForm() {
         <label htmlFor="">Phone number</label>
         <input type="text" name="" id="" placeholder="0812 3456 785" />
       </div>
-      <div className={style.shippingFormBtn}>Proceed to payment</div>
+      <div
+        className={style.shippingFormBtn}
+        onClick={() => router.push('/Payment')}
+      >
+        Proceed to payment
+      </div>
     </div>
   );
 }

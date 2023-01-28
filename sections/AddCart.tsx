@@ -1,4 +1,4 @@
-'use client';
+// 'use client';
 
 import Image from 'next/image';
 import React from 'react';
@@ -7,7 +7,27 @@ import { addToBasket } from '../redux/features/basketSlice';
 import { toast } from 'react-hot-toast';
 import { useDispatch } from 'react-redux';
 
-export default function AddCart() {
+type Product = {
+  id: string;
+  name: string;
+  creator: string;
+  origin: string;
+  views: string;
+  price: {
+    usd: number;
+    eth: number;
+  };
+  size: {
+    ft: number;
+  };
+  url: string;
+};
+
+type Props = {
+  product: Product;
+};
+
+export default function AddCart({ product }: Props) {
   const [isOpen, setOpen] = React.useState(false);
   const [isListingOpen, setListingOpen] = React.useState(false);
   const [isStatusOpen, setStatusOpen] = React.useState(false);
@@ -42,7 +62,7 @@ export default function AddCart() {
     <div className={styled.AddCart}>
       <div className={styled.AddCartImage}>
         <Image
-          src="/Rectangle Cart.png"
+          src=""
           width={500}
           height={926}
           alt="pics"
@@ -51,7 +71,7 @@ export default function AddCart() {
       </div>
       <div className={styled.AddCartContainer}>
         <div className={styled.cartContainer}>
-          <h2>Boolean Egyptian</h2>
+          <h2>{product.name}</h2>
           <p>
             <img src="/Vector.png" alt="vector img"></img>
             0.09
@@ -59,7 +79,7 @@ export default function AddCart() {
         </div>
         <div className={styled.AddCartCreator}>
           <p>
-            Creator : <span>Ali Dawa</span>{' '}
+            Creator : <span>{product.creator}</span>{' '}
           </p>
           <p>Made in Italy</p>
           <p>Total views: 1.7K views</p>
@@ -84,12 +104,7 @@ export default function AddCart() {
           </h3>
           {isOpen && (
             <div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Explicabo voluptas ipsum optio expedita possimus, harum autem
-                quibusdam minus voluptate cum ipsam sit saepe, ullam recusandae
-                doloribus dolorum corrupti. Quos, harum?
-              </p>
+              <p>{product.price.usd}</p>
             </div>
           )}
         </div>

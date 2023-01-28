@@ -7,6 +7,29 @@
   justify-content: flex-start;
 }
 
+.marketCartIcon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.marketCartIconBox {
+  color: white;
+  cursor: pointer;
+  background-image: linear-gradient(
+    to right,
+    #006ca2 13.63%,
+    rgba(192, 86, 9, 0.49) 67.89%
+  );
+  border-radius: 9999px;
+  width: 3rem;
+  height: 3rem;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .mobileFlexName {
   text-transform: uppercase !important;
 }

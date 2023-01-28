@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import React from 'react';
 import HeadComponent from '../../app/Head';
 import { AuctionImage, Navbar } from '../../component';
@@ -5,7 +6,6 @@ import style from '../../styles/MarketPlace.module.css';
 import classes from '../../styles/Auction.module.css';
 import { AuctionBidBox, AuctionImageBox } from '../../sections';
 import { GetStaticProps } from 'next';
-import Head from 'next/head';
 import Script from 'next/script';
 
 type Auction = {
@@ -31,10 +31,10 @@ type Bid = {
   };
 };
 
-type Props = {
+interface Props {
   auction: Auction[];
   bids: Bid[];
-};
+}
 
 export const getStaticProps: GetStaticProps = async () => {
   const { auction } = await import('../../data/auction');
@@ -47,21 +47,20 @@ export const getStaticProps: GetStaticProps = async () => {
   };
 };
 
-export async function getStaticPaths() {
-  const { auction } = await import('../../data/auction');
-  const allPaths = auction.map((e) => {
-    return {
-      params: {
-        Auctionid: e.id.toString(),
-      },
-    };
-  });
-  // console.log(allPaths);
-  return {
-    path: allPaths,
-    
-  };
-}
+// export async function getStaticPaths() {
+//   const { auction } = await import('../../data/auction');
+//   const allPaths = auction.map((e) => {
+//     return {
+//       params: {
+//         Auctionid: e.id.toString(),
+//       },
+//     };
+//   });
+//   return {
+//     paths: allPaths,
+//     fallback: false,
+//   };
+// }
 
 const Auction: React.FC<Props> = ({ auction, bids }) => {
   return (

@@ -1,5 +1,7 @@
 .shippingComponent {
   display: flex;
+  /* align-items: center;
+  justify-content: center; */
   gap: 10%;
   padding: 0 100px;
 }
@@ -68,7 +70,13 @@
 
 .shippingFormBtn {
   padding: 32.7287px 119.664px;
-  background: #3341c1;
+  background-image: linear-gradient(
+    to right,
+    #006ca2 13.63%,
+    rgba(192, 86, 9, 0.49) 67.89%
+  );
+  color: white;
+  cursor: pointer;
   border-radius: 8px;
   color: white;
   text-align: center;

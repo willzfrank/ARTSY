@@ -1,8 +1,24 @@
-import { GetServerSideProps, GetStaticProps } from 'next';
+import { GetStaticProps } from 'next';
 import HeadComponent from '../../app/Head';
 import { Navbar, SearchComponentMarket } from '../../component';
-import { Footer, LeftMarrketPlace, RightMarket } from '../../sections';
+import { LeftMarrketPlace, RightMarket } from '../../sections';
 import styled from '../../styles/MarketPlace.module.css';
+
+type Product = {
+  id: string;
+  name: string;
+  creator: string;
+  origin: string;
+  views: string;
+  price: {
+    usd: number;
+    eth: number;
+  };
+  size: {
+    ft: number;
+  };
+  url: string;
+};
 
 type MarketPlaceProps = {
   products: Product[];
@@ -36,8 +52,6 @@ const MarketPlace = ({ products }: MarketPlaceProps) => {
       <div className={styled.rightMarketButtonBox}>
         <button className={styled.rightMarketButton}>See more</button>
       </div>
-
-      {/* <Footer /> */}
     </div>
   );
 };

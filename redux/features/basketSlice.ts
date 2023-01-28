@@ -5,11 +5,15 @@ import { RootState } from '../store';
 // Define a type for the slice state
 type BasketState = {
   items: Product[];
+  subtotal: number;
+  total: number;
 };
 
 // Define the initial state using that type
 const initialState: BasketState = {
   items: [],
+  subtotal: 0,
+  total: 0,
 };
 
 export const basketSlice = createSlice({
@@ -17,21 +21,23 @@ export const basketSlice = createSlice({
 
   initialState,
   reducers: {
-    addToBasket: (state: BasketState, action: PayloadAction<Product>) => {
-      const existingItem = state.items.find(
+    addToBasket: (state, action) => {
+      const existingProduct = state.items.find(
         (item) => item.id === action.payload.id
       );
-      if (existingItem) {
-        existingItem.quantity += 1;
+      if (existingProduct) {
+        existingProduct.quantity += action.payload.quantity;
       } else {
-        state.items = [
-          ...state.items,
-          {
-            ...action.payload,
-            quantity: 1,
-          },
-        ];
+        state.items.push({
+          ...action.payload,
+          quantity: action.payload.quantity ? action.payload.quantity : 1,
+        });
       }
+      state.subtotal = state.items.reduce(
+        (acc, item) => acc + item.price.usd * item.quantity,
+        0
+      );
+      state.total = state.subtotal + state.subtotal * 0.1;
     },
 
     increaseItem: (
@@ -68,7 +74,9 @@ export const basketSlice = createSlice({
       if (existingItem) {
         if (existingItem.quantity > 1) {
           existingItem.quantity -= 1;
+          state.subtotal -= existingItem.price.usd;
         } else {
+          state.subtotal -= existingItem.price.usd;
           state.items = state.items.filter(
             (item) => item.id !== action.payload.id
           );
@@ -96,10 +104,10 @@ export const selectBasketWithId = (state: RootState, id: string) => {
   state.basket.items.filter((item: Product) => item.id === id);
 };
 
-// export const selectBasketTotal = (state: RootState) =>
-//   state.basket.items.reduce(
-//     (total: number, item: Product) => (total += item.price.usd),
-//     0
-//   );
+export const selectBasketTotal = (state: RootState) =>
+  state.basket.items.reduce(
+    (total: number, item: Product) => (total += item.price.usd),
+    0
+  );
 
 export default basketSlice.reducer;

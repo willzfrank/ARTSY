@@ -157,7 +157,12 @@
 
 .confirmBtn {
   padding: 32.7287px 119.664px;
-  background: #3341c1;
+  background-image: linear-gradient(
+    to right,
+    #006ca2 13.63%,
+    rgba(192, 86, 9, 0.49) 67.89%
+  );
+  cursor: pointer;
   border-radius: 8px;
   color: white;
   text-align: center;
@@ -392,7 +397,12 @@
 
   .confirmBtn {
     padding: 32.7287px 117.664px;
-    background: #3341c1;
+    background-image: linear-gradient(
+      to right,
+      #006ca2 13.63%,
+      rgba(192, 86, 9, 0.49) 67.89%
+    );
+    cursor: pointer;
     border-radius: 8px;
     color: white;
     text-align: center;

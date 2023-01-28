@@ -1,10 +1,23 @@
 import Image from 'next/image';
 import React from 'react';
 import styled from '../styles/Payment.module.css';
+import { useSelector, useDispatch } from 'react-redux';
+import { RootState } from '../redux/store';
+import { useRouter } from 'next/router';
+import { selectBasketTotal } from '../redux/features/basketSlice';
 
 type Props = {};
 
 function PaymentComponent({}: Props) {
+  const router = useRouter();
+  const basketShippingFee = useSelector(selectBasketTotal);
+  const subtotal = useSelector((state: RootState) => state.basket.subtotal);
+  const items = useSelector((state: RootState) => state.basket.items);
+
+  const basketTotal = () => {
+    return subtotal + basketShippingFee;
+  };
+
   const [checked, setChecked] = React.useState(true);
   const [selectedOption, setSelectedOption] = React.useState('metamask');
 
@@ -180,7 +193,12 @@ function PaymentComponent({}: Props) {
             </div>
           </div>
 
-          <div className={styled.confirmBtn}>Confirm</div>
+          <div
+            className={styled.confirmBtn}
+            onClick={() => router.push('/Success')}
+          >
+            Confirm
+          </div>
         </div>
         <div className={styled.paymentRight}>
           <h1 className="summaryTitle">Payment Summary</h1>
@@ -199,15 +217,15 @@ function PaymentComponent({}: Props) {
             <div className={styled.products}>
               <div className={styled.productsContent}>
                 <p>Products in cart : </p>
-                <p>6</p>
+                <p>{items.length}</p>
               </div>
               <div className={styled.productsContent}>
                 <p>Shipping : </p>
-                <p>$2.50</p>
+                <p>${basketShippingFee}</p>
               </div>
               <div className={styled.productsContent}>
                 <p>Total : </p>
-                <p>$114.00</p>
+                <p>${basketTotal()}</p>
               </div>
             </div>
           </div>

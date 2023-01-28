@@ -34,8 +34,7 @@ export default function CatComponent({ id, items }: Props) {
   );
 
   const dispatch = useDispatch();
-  const [itemsIncreased, setItemsIncreased] = React.useState(items.length);
-  const [itemsDecreased, setItemsDecreased] = React.useState(items.length);
+
   const addIncreaseItemInBasket = () => {
     dispatch(addToBasket({ ...item, quantity: (item.quantity || 0) + 1 }));
     toast.success(`One item of ${items[0].name} has been added to basket`, {
@@ -46,18 +45,22 @@ export default function CatComponent({ id, items }: Props) {
   const removeItemInBasket = () => {
     if (item.quantity > 1) {
       dispatch(removeFromBasket({ id }));
-      toast.success(
-        `One item of ${items[0].name} has been removed from basket`,
-        {
-          position: 'bottom-center',
-        }
-      );
+      toast.error(`One item of ${items[0].name} has been removed from basket`, {
+        position: 'bottom-center',
+      });
     } else {
       dispatch(removeFromBasket({ id }));
-      toast.success(`${items[0].name} has been removed from basket`, {
+      toast.error(`${items[0].name} has been removed from basket`, {
         position: 'bottom-center',
       });
     }
+  };
+
+  const removeAllItemInBasket = () => {
+    dispatch(removeAllFromBasket(id));
+    toast.error(`${items[0].name} has been cleared from basket`, {
+      position: 'bottom-center',
+    });
   };
 
   const Total = () => {
@@ -87,10 +90,7 @@ export default function CatComponent({ id, items }: Props) {
             </div>
           </div>
         </div>
-        <div
-          className={style.shoppingClose}
-          onClick={() => dispatch(removeAllFromBasket(id))}
-        >
+        <div className={style.shoppingClose} onClick={removeAllItemInBasket}>
           <i className="uil uil-times-circle"></i>
           <p>{Total()}</p>
         </div>
