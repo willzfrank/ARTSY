@@ -22,6 +22,7 @@ import HeroSwiper from './HeroSwiper';
 import UpcomingAuction from './UpcomingAuction';
 import VerticalSwiper from './VerticalSwiper';
 import FloatingInput from './FloatingInput';
+import HeartIcon from './HeartIcon';
 
 export {
   Navbar,
@@ -47,4 +48,5 @@ export {
   UpcomingAuction,
   VerticalSwiper,
   FloatingInput,
+  HeartIcon,
 };

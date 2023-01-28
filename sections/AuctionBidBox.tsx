@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import style from '../styles/Auction.module.css';
+import { HeartIcon } from '../component';
 
 type Bid = {
   current: {
@@ -25,21 +26,13 @@ type BidProps = {
 };
 
 const AuctionBidBox: React.FC<BidProps> = ({ bids }) => {
-  const [heart, setHeart] = React.useState(false);
-
-  const heartRed = () => {
-    setHeart(!heart);
-  };
-
   return (
     <div className={style.auctionBidMain}>
       {bids.map((bid) => (
         <div className={style.auctionBid} key={bid.id}>
           <div className={style.auctionBidBox}>
             <div className={style.auctionBidHeartBox}>
-              <div className={style.auctionBidHeart} onClick={heartRed}>
-                <i className={`fa-solid fa-heart`}></i>
-              </div>
+              <HeartIcon />
             </div>
 
             <div>
