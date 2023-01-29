@@ -16,7 +16,10 @@ type AuctionProps = {
 
 export const getStaticProps: GetStaticProps<AuctionProps> = async (context) => {
   const { auction } = await import('../../data/auction');
-  const selectedAuction = auction.find((p) => p.id === context.params.id);
+  const selectedAuction = auction.find((p) => p.id === context.params.id) || {
+    id: '',
+    url: '',
+  };
   return { props: { auction: selectedAuction } };
 };
 
@@ -203,7 +206,8 @@ export default function Bid({ auction }: AuctionProps) {
           </div>
         </div>
         <h2 className={styled.AuctionDropTitle}>
-          See upcoming drops <i className={`uil uil-arrow-right ${styled.arrowAuction}`}></i>
+          See upcoming drops{' '}
+          <i className={`uil uil-arrow-right ${styled.arrowAuction}`}></i>
         </h2>
       </div>
 
