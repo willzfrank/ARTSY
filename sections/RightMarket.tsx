@@ -8,23 +8,6 @@ import style from '../styles/RightMarket.module.css';
 import React from 'react';
 import Button from '../component/Button';
 
-type Product = {
-  id: string;
-  name: string;
-  creator: string;
-  origin: string;
-  views: string;
-  price: {
-    usd: number;
-    eth: number;
-  };
-  size: {
-    ft: number;
-  };
-  url: string;
-  quantity: number;
-};
-
 type marketPlaceMainPropType = {
   products: Product[];
 };

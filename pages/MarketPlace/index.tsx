@@ -4,22 +4,6 @@ import { Navbar, SearchComponentMarket } from '../../component';
 import { LeftMarrketPlace, RightMarket } from '../../sections';
 import styled from '../../styles/MarketPlace.module.css';
 
-type Product = {
-  id: string;
-  name: string;
-  creator: string;
-  origin: string;
-  views: string;
-  price: {
-    usd: number;
-    eth: number;
-  };
-  size: {
-    ft: number;
-  };
-  url: string;
-};
-
 type MarketPlaceProps = {
   products: Product[];
 };

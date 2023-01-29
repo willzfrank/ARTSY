@@ -7,22 +7,6 @@ import { addToBasket } from '../redux/features/basketSlice';
 import { toast } from 'react-hot-toast';
 import { useDispatch } from 'react-redux';
 
-type Product = {
-  id: string;
-  name: string;
-  creator: string;
-  origin: string;
-  views: string;
-  price: {
-    usd: number;
-    eth: number;
-  };
-  size: {
-    ft: number;
-  };
-  url: string;
-};
-
 type Props = {
   product: Product;
 };
