@@ -6,7 +6,7 @@ import { AddCart, CartImageBox } from '../../sections';
 import { ParsedUrlQuery } from 'querystring';
 
 type MarketPlaceProps = {
-  product: Product[];
+  product: Product;
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
