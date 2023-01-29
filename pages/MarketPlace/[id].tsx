@@ -3,17 +3,18 @@ import React from 'react';
 import HeadComponent from '../../app/Head';
 import { CartExplore, Directory, Navbar } from '../../component';
 import { AddCart, CartImageBox } from '../../sections';
-import { useRouter } from 'next/router';
+import { ParsedUrlQuery } from 'querystring';
 
 type MarketPlaceProps = {
   product: Product[];
 };
 
-export const getStaticProps: GetStaticProps<MarketPlaceProps> = async (
-  context
-) => {
+export const getStaticProps: GetStaticProps<MarketPlaceProps> = async ({
+  params,
+}) => {
   const { products } = await import('../../data/products');
-  const product = products.find((p) => p.id === context.params.id);
+  const id = (params as ParsedUrlQuery).id;
+  const product = products.find((p) => p.id === id);
   console.log(product);
   return { props: { product } };
 };

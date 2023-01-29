@@ -4,6 +4,7 @@ import HeadComponent from '../../app/Head';
 import styled from '../../styles/Auction.module.css';
 import { useRouter } from 'next/router';
 import { GetStaticPaths, GetStaticProps } from 'next';
+import { ParsedUrlQuery } from 'querystring';
 
 type Auction = {
   id: string;
@@ -14,16 +15,21 @@ type AuctionProps = {
   auction: Auction;
 };
 
-export const getStaticProps: GetStaticProps<AuctionProps> = async (context) => {
+export const getStaticProps: GetStaticProps<
+  AuctionProps,
+  ParsedUrlQuery
+> = async (context) => {
+  const { params } = context;
   const { auction } = await import('../../data/auction');
-  const selectedAuction = auction.find((p) => p.id === context.params.id) || {
+  const id = (params as ParsedUrlQuery).id;
+  const selectedAuction = auction.find((p) => p.id === id) || {
     id: '',
     url: '',
   };
   return { props: { auction: selectedAuction } };
 };
 
-export const getStaticPaths: GetStaticPaths = async () => {
+export const getStaticPaths: GetStaticPaths<ParsedUrlQuery> = async () => {
   const { auction } = await import('../../data/auction');
   const paths = auction.map((a) => ({
     params: { id: a.id },
