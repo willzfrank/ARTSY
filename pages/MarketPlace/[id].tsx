@@ -36,7 +36,7 @@ export default function Explore({ product }: MarketPlaceProps) {
       <Directory />
       <AddCart product={product} />
       <CartExplore />
-      {/* <CartImageBox /> */}
+      <CartImageBox />
     </div>
   );
 }

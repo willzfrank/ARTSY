@@ -12,5 +12,5 @@ type Product = {
     ft: number;
   };
   url: string;
-  quantity?: number;
+  quantity: number;
 };

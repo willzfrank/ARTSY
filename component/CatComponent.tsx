@@ -36,7 +36,7 @@ export default function CatComponent({ id, items }: Props) {
   const dispatch = useDispatch();
 
   const addIncreaseItemInBasket = () => {
-    dispatch(addToBasket({ ...item, quantity: (item.quantity || 0) + 1 }));
+    dispatch(increaseItem({ id }));
     toast.success(`One item of ${items[0].name} has been added to basket`, {
       position: 'bottom-center',
     });
