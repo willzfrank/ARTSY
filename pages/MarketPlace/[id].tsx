@@ -14,6 +14,7 @@ export const getStaticProps: GetStaticProps<MarketPlaceProps> = async (
 ) => {
   const { products } = await import('../../data/products');
   const product = products.find((p) => p.id === context.params.id);
+  console.log(product);
   return { props: { product } };
 };
 
@@ -34,7 +35,7 @@ export default function Explore({ product }: MarketPlaceProps) {
       <HeadComponent />
       <Navbar />
       <Directory />
-      {product && <AddCart product={product} />}
+      <AddCart product={product} />
       <CartExplore />
       {/* <CartImageBox /> */}
     </div>

@@ -62,7 +62,7 @@ export default function AddCart({ product }: Props) {
     <div className={styled.AddCart}>
       <div className={styled.AddCartImage}>
         <Image
-          src=""
+          src={product.url}
           width={500}
           height={926}
           alt="pics"

@@ -4,17 +4,46 @@ import React from 'react';
 import HeadComponent from '../../app/Head';
 import styled from '../../styles/Auction.module.css';
 import { useRouter } from 'next/router';
+import { GetStaticPaths, GetStaticProps } from 'next';
 
 type Auction = {
   id: string;
   url: string;
 };
 
-export default function Bid(data: Auction) {
-  const router = useRouter();
-  const Auctionid = router.query.Auctionid;
+type AuctionProps = {
+  auctions: Auction[];
+};
 
-  console.log(Auctionid);
+export const getStaticProps: GetStaticProps<Auction> = async (context) => {
+  const { auction } = await import('../../data/auction');
+  const auctions = auction.find((p) => p.id === context.params.id);
+  console.log(auctions);
+  return { props: { auctions } };
+};
+
+export const getStaticPaths: GetStaticPaths = async () => {
+  const { auction } = await import('../../data/auction');
+  const paths = auction.map((auctions) => ({
+    params: { id: auctions.id },
+  }));
+  return {
+    paths,
+    fallback: false,
+  };
+};
+
+export default function Bid({ auctions }: AuctionProps) {
+  const [isRed, setIsRed] = React.useState(false);
+  const [isFloating, setIsFloating] = React.useState(false);
+  // const router = useRouter();
+  // const id = router.query.id;
+
+  const handleClick = () => {
+    setIsRed(!isRed);
+    setIsFloating(!isFloating);
+  };
+
   return (
     <div>
       <HeadComponent />
@@ -26,7 +55,12 @@ export default function Bid(data: Auction) {
         </div>
         <div className={styled.BidBox}>
           <div className={styled.BidBoxImg}>
-            <Image src="" alt="" width={622} height={800} />
+            <Image
+              width={622}
+              height={750}
+              alt="auctionImg"
+              src={auctions.url}
+            />
           </div>
 
           <div className={styled.BidBoxChatBox}>
@@ -41,8 +75,8 @@ export default function Bid(data: Auction) {
                   />
                 </div>
                 <div>
-                  <p>Opeyemi Tiwalope</p>
-                  <p>$45.00</p>
+                  <p>Tiwa Tiwalope</p>
+                  <p>$145.00</p>
                 </div>
               </div>
 
@@ -56,8 +90,8 @@ export default function Bid(data: Auction) {
                   />
                 </div>
                 <div>
-                  <p>Opeyemi Tiwalope</p>
-                  <p>$45.00</p>
+                  <p>Yemi Bayo</p>
+                  <p>$405.00</p>
                 </div>
               </div>
 
@@ -71,8 +105,8 @@ export default function Bid(data: Auction) {
                   />
                 </div>
                 <div>
-                  <p>Opeyemi Tiwalope</p>
-                  <p>$45.00</p>
+                  <p>Frances Jane</p>
+                  <p>$445.00</p>
                 </div>
               </div>
 
@@ -86,7 +120,7 @@ export default function Bid(data: Auction) {
                   />
                 </div>
                 <div>
-                  <p>Opeyemi Tiwalope</p>
+                  <p>Donatus George</p>
                   <p>$45.00</p>
                 </div>
               </div>
@@ -101,8 +135,8 @@ export default function Bid(data: Auction) {
                   />
                 </div>
                 <div>
-                  <p>Opeyemi Tiwalope</p>
-                  <p>$45.00</p>
+                  <p>Bill Rice</p>
+                  <p>$415.00</p>
                 </div>
               </div>
 
@@ -116,8 +150,8 @@ export default function Bid(data: Auction) {
                   />
                 </div>
                 <div>
-                  <p>Opeyemi Tiwalope</p>
-                  <p>$45.00</p>
+                  <p>Chiizzy Chiz</p>
+                  <p>$451.00</p>
                 </div>
               </div>
 
@@ -131,16 +165,26 @@ export default function Bid(data: Auction) {
                   />
                 </div>
                 <div>
-                  <p>Opeyemi Tiwalope</p>
-                  <p>$45.00</p>
+                  <p>Willz Frank</p>
+                  <p>$455.00</p>
                 </div>
               </div>
             </div>
             <div className={styled.BidBoxChatTextBox}>
               <p>Creator: Stormi Rylie</p>
-              <div>
-                <input type="text" name="" id="" placeholder="Place a bid" />
-                <i className="uil uil-heart"></i>
+              <div className={styled.textBox}>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Place a bid ..."
+                />
+                <i
+                  className={`uil uil-heart ${isRed ? 'red' : ''} ${
+                    isFloating ? 'float' : ''
+                  }`}
+                  onClick={handleClick}
+                ></i>
               </div>
             </div>
           </div>
