@@ -15,10 +15,7 @@ type AuctionProps = {
   auction: Auction;
 };
 
-export const getStaticProps: GetStaticProps<
-  AuctionProps,
-  ParsedUrlQuery
-> = async (context) => {
+export const getStaticProps: GetStaticProps = async (context) => {
   const { params } = context;
   const { auction } = await import('../../data/auction');
   const id = (params as ParsedUrlQuery).id;

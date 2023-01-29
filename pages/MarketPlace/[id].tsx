@@ -9,9 +9,7 @@ type MarketPlaceProps = {
   product: Product[];
 };
 
-export const getStaticProps: GetStaticProps<MarketPlaceProps> = async ({
-  params,
-}) => {
+export const getStaticProps: GetStaticProps = async ({ params }) => {
   const { products } = await import('../../data/products');
   const id = (params as ParsedUrlQuery).id;
   const product = products.find((p) => p.id === id);
