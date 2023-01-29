@@ -1,6 +1,5 @@
-import { style, StyledEngineProvider } from '@mui/system';
 import Image from 'next/image';
-import React from 'react';
+import React, { useState } from 'react';
 import HeadComponent from '../../app/Head';
 import styled from '../../styles/Auction.module.css';
 import { useRouter } from 'next/router';
@@ -12,20 +11,19 @@ type Auction = {
 };
 
 type AuctionProps = {
-  auctions: Auction[];
+  auction: Auction;
 };
 
-export const getStaticProps: GetStaticProps<Auction> = async (context) => {
+export const getStaticProps: GetStaticProps<AuctionProps> = async (context) => {
   const { auction } = await import('../../data/auction');
-  const auctions = auction.find((p) => p.id === context.params.id);
-  console.log(auctions);
-  return { props: { auctions } };
+  const selectedAuction = auction.find((p) => p.id === context.params.id);
+  return { props: { auction: selectedAuction } };
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const { auction } = await import('../../data/auction');
-  const paths = auction.map((auctions) => ({
-    params: { id: auctions.id },
+  const paths = auction.map((a) => ({
+    params: { id: a.id },
   }));
   return {
     paths,
@@ -33,11 +31,9 @@ export const getStaticPaths: GetStaticPaths = async () => {
   };
 };
 
-export default function Bid({ auctions }: AuctionProps) {
-  const [isRed, setIsRed] = React.useState(false);
-  const [isFloating, setIsFloating] = React.useState(false);
-  // const router = useRouter();
-  // const id = router.query.id;
+export default function Bid({ auction }: AuctionProps) {
+  const [isRed, setIsRed] = useState(false);
+  const [isFloating, setIsFloating] = useState(false);
 
   const handleClick = () => {
     setIsRed(!isRed);
@@ -55,12 +51,29 @@ export default function Bid({ auctions }: AuctionProps) {
         </div>
         <div className={styled.BidBox}>
           <div className={styled.BidBoxImg}>
-            <Image
-              width={622}
-              height={750}
-              alt="auctionImg"
-              src={auctions.url}
-            />
+            <div
+              style={{
+                width: 622,
+                height: 750,
+                backgroundImage: `url(${auction.url})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                position: 'relative',
+              }}
+            >
+              <div className={styled.LiveBox}>
+                <i
+                  className={`uil uil-times-circle ${styled.closeAuctionBtn}`}
+                ></i>
+                <div className={styled.auctionLiveBtn}>LIVE</div>
+              </div>
+              <div className={styled.liveBoxTitle}>
+                <h2>Current bid $4500</h2>
+              </div>
+              <div className={styled.liveBoxText}>
+                <p>Tag: Lost or Wither</p>
+              </div>
+            </div>
           </div>
 
           <div className={styled.BidBoxChatBox}>
@@ -189,7 +202,9 @@ export default function Bid({ auctions }: AuctionProps) {
             </div>
           </div>
         </div>
-        <h2>See upcoming drops</h2>
+        <h2 className={styled.AuctionDropTitle}>
+          See upcoming drops <i className={`uil uil-arrow-right ${styled.arrowAuction}`}></i>
+        </h2>
       </div>
 
       <div className={styled.mobileAuction}>
