@@ -1,10 +1,14 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import style from '../styles/Upcoming.module.css';
 
 export default function UpcomingAuction() {
   return (
     <div className={style.upcomingActionBox}>
+      <ToastContainer />
       <div className={style.upcoming}>
         <div>
           <div className={style.upcomingHeader}>
@@ -36,8 +40,16 @@ export default function UpcomingAuction() {
                   HIGHEST AND LOWEST BIDS.
                 </p>
                 <div className={style.Upcoming5}>
-                  <p>See more</p>
-                  <p>Set a reminder</p>
+                  <Link href="/Drops">
+                    <p>See more</p>
+                  </Link>
+                  <p
+                    onClick={() =>
+                      toast('You will be notified in the next few hours.')
+                    }
+                  >
+                    Set a reminder
+                  </p>
                 </div>
               </div>
             </div>

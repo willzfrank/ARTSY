@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { FooterSubscription } from '../component';
 import style from '../styles/Footer.module.css';
 
@@ -10,33 +11,32 @@ const Footer = () => {
 
         <ul className={`${style.hidden} ${style.footerListContainer}`}>
           <li className={style.footerListText}>
-            <a href="Home.tsx">Home</a>
+            <Link href="/">Home</Link>
           </li>
 
           <li className={style.footerListText}>
-            <a href="MarketPlace/">Marketplace</a>
+            <Link href="/MarketPlace">Marketplace</Link>
           </li>
           <li className={style.footerListText}>
-            <a href="Auction/index.tsx">Auctions</a>
+            <Link href="/Auction">Auctions</Link>
           </li>
           <li className={style.footerListText}>
-            <a href="Drops.tsx">Drops</a>
+            <Link href="/Drops">Drops</Link>
           </li>
         </ul>
 
         <ul className={`${style.hidden} ${style.footerListContainer}`}>
           <li className={style.footerListText}>
-            <a href="404.tsx"></a>
-            Blog
+            <Link href="/construction">Blog</Link>
           </li>
           <li className={style.footerListText}>
-            <a href="404.tsx"></a>Wallets
+            <Link href="/construction">Wallets</Link>
           </li>
           <li className={style.footerListText}>
-            <a href="404.tsx"></a>Rates
+            <Link href="/construction">Rates</Link>
           </li>
           <li className={style.footerListText}>
-            <a href="404.tsx"></a>High bids
+            <Link href="/construction">High bids</Link>
           </li>
         </ul>
 

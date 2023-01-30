@@ -14,3 +14,5 @@ type Product = {
   url: string;
   quantity: number;
 };
+
+declare module 'react-reveal/Bounce';

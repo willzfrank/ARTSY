@@ -82,9 +82,11 @@ function FeaturedProducts({ styledClass, image }: FeatureMainPropType) {
             />
           </div>
           <p className={styled.FeaturedProductText}>64 major creators</p>
-          <div className={styled.arrowContainer}>
-            <i className={`${styled.arrow} uil uil-arrow-right`}></i>
-          </div>
+          <Link href="/MarketPlace">
+            <div className={styled.arrowContainer}>
+              <i className={`${styled.arrow} uil uil-arrow-right`}></i>
+            </div>
+          </Link>
         </div>
       </div>
     </div>

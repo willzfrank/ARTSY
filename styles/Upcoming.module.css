@@ -7,7 +7,7 @@
   position: absolute;
   gap: 20px;
   width: max-content;
-  bottom: 0;
+  bottom: 10px;
   right: 17%;
 }
 .AuctionarrowContainer {
