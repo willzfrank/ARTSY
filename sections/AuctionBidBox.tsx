@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import style from '../styles/Auction.module.css';
 import { HeartIcon } from '../component';
+import { toast, ToastContainer } from 'react-toastify';
 
 type Bid = {
   current: {
@@ -28,6 +29,7 @@ type BidProps = {
 const AuctionBidBox: React.FC<BidProps> = ({ bids }) => {
   return (
     <div className={style.auctionBidMain}>
+      <ToastContainer />
       {bids.map((bid) => (
         <div className={style.auctionBid} key={bid.id}>
           <div className={style.auctionBidBox}>
@@ -67,7 +69,11 @@ const AuctionBidBox: React.FC<BidProps> = ({ bids }) => {
               <p>Current bid</p>
               <span>{`${bid.current.eth} ETH`}</span>
             </div>
-            <button>Place bid</button>
+            <button
+              onClick={() => toast(`Successful Bid Placement for ${bid.name}`)}
+            >
+              Place bid
+            </button>
           </div>
         </div>
       ))}

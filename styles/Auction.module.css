@@ -170,7 +170,7 @@
   padding-left: 139px;
   display: flex;
   gap: 100px;
-  margin-bottom: 300px;
+  margin-bottom: 100px;
 }
 /* AUNCTION BID */
 .auctionBid {
@@ -444,6 +444,13 @@
 }
 
 @media (max-width: 768px) {
+  .auctionImage {
+    width: 100%;
+  }
+  .auctionBoxImage {
+    display: flex;
+    padding: 0 20px;
+  }
   .AuctionTitle,
   .popularTitle {
     font-family: Satoshi;
