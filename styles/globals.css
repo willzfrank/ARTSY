@@ -43,6 +43,21 @@ li {
   font-weight: bold;
 }
 
+/* preloader */
+.preloader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #34d2e2; */
+  background-color: white;
+  height: 100vh;
+}
+
+.preloader_img {
+  width: 10% !important;
+  height: 20% !important;
+}
+
 .FeaturedProductContainer {
   display: flex;
   gap: 37px;
@@ -218,5 +233,12 @@ Link {
   }
   .active {
     color: red;
+  }
+}
+
+@media (max-width: 884px) {
+  .preloader_img {
+    width: 40% !important;
+    height: 20% !important;
   }
 }
