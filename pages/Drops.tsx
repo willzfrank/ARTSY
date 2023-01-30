@@ -6,6 +6,7 @@ import style from '../styles/Drop.module.css';
 import Link from 'next/link';
 import { GetStaticProps } from 'next';
 import Head from 'next/head';
+import { toast, ToastContainer } from 'react-toastify';
 
 type Drop = {
   id: string;
@@ -42,6 +43,7 @@ export const getStaticProps: GetStaticProps<DropsProps> = async () => {
 const Drops: React.FC<DropsProps> = ({ drops }) => {
   return (
     <div className={style.dropMainBox}>
+      <ToastContainer />
       <div>
         <Head>
           <title>Drops | Artsy</title>
@@ -59,16 +61,18 @@ const Drops: React.FC<DropsProps> = ({ drops }) => {
       </div>
       <Navbar />
       <h2 className={style.dropMainLinkTitle}>
-        <Link href="/">Home</Link>/ <a href="/Auction/index.tsx">Auctions</a>/
-        Live bid/
-        <span> Drop</span>{' '}
+        <Link href="/">Home</Link>/ <Link href="/Auction">Auctions</Link>/{' '}
+        <Link href="/Auction/ap2">Live bid</Link> /<span> Drop</span>{' '}
       </h2>
       <div className={style.dropMainTitle}>
         <h1>Upcoming drops</h1>
         <p className={style.dropText}>
           Turn on notifications so that no drops will miss you.
         </p>
-        <div className={style.dropMainButtonBox}>
+        <div
+          className={style.dropMainButtonBox}
+          onClick={() => toast('notification turned on')}
+        >
           <p>Notify me</p>
         </div>
       </div>

@@ -94,18 +94,15 @@ const SearchComponentMarket = () => {
           </div>
         </div>
 
-        <div className={styled.marketPlaceSortContent} onClick={toggleDropdown}>
-          <p>Sort by</p>
-          <i className={`uil uil-angle-down ${isOpen && 'arrowOpen'}`}></i>
-          {isOpen && (
-            <div className={styled.marketPlaceSortContentList}>
-              <p className={style.ArtistList}>All</p>
-              <p className={style.ArtistList}>Below $100.00</p>
-              <p className={style.ArtistList}>$100.00 -$150.00</p>
-              <p className={style.ArtistList}>%150.00 - $200.00</p>
-              <p className={style.ArtistList}> Above $200.00</p>
-            </div>
-          )}
+        <div>
+          <select className={style.price_select}>
+            <option value="all">Sort by </option>
+            <option value="all">All</option>
+            <option value="below100">Below $100.00</option>
+            <option value="100to150">$100.00 - $150.00</option>
+            <option value="150to200">$150.00 - $200.00</option>
+            <option value="above200">Above $200.00</option>
+          </select>
         </div>
       </div>
     </div>

@@ -2,7 +2,7 @@ import style from '../styles/LeftMarket.module.css';
 import { useState } from 'react';
 
 export default function CollectionMarket() {
-  const [isOpen, setOpen] = useState(false);
+  const [isOpen, setOpen] = useState(true);
 
   const toggleDropdown = () => {
     setOpen(!isOpen);

@@ -15,7 +15,7 @@ export default function SliderBox() {
     setValue(newValue as number[]);
   };
 
-  const [isOpen, setOpen] = React.useState(false);
+  const [isOpen, setOpen] = React.useState(true);
 
   const toggleDropdown = () => {
     setOpen(!isOpen);

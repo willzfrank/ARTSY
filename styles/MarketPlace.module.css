@@ -21,7 +21,11 @@
 }
 
 .rightMarketButton {
-  border: 1px solid #333333;
+  background-image: linear-gradient(
+    to right,
+    #006ca2 13.63%,
+    rgba(192, 86, 9, 0.49) 67.89%
+  );
   width: 249px;
   height: 73px;
   font-family: Satoshi;
@@ -30,15 +34,24 @@
   line-height: 41px;
   letter-spacing: 0em;
   text-align: center;
-  color: #333333;
+  color: white;
+  cursor: pointer;
+  border: none;
   border-radius: 0.625rem;
   transition: 0.5s ease-in-out;
 }
 
 .rightMarketButton:hover {
-  background-color: #686868;
-  color: white;
-  cursor: pointer;
+  background-image: linear-gradient(
+    to right,
+    #006ca2 13.63%,
+    rgba(192, 86, 9, 0.49) 67.89%
+  );
+  box-shadow: 0px 0px 15px rgba(192, 86, 9, 0.49) 67.89%;
+  transform: translateY(-5px);
+  text-shadow: 0px 0px 5px rgba(192, 86, 9, 0.49) 67.89%;
+  transition: background-image 1s, box-shadow 1s, transform 1s, text-shadow 1s,
+    color 1s;
 }
 
 .rightMarketButtonBox {
