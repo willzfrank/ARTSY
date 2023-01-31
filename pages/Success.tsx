@@ -45,17 +45,17 @@ function Success({}: Props) {
               height={405}
               className={style.congratsImage}
             />
-            <h2>Hey Celestina, thank you for your purchase. </h2>
-            <div>
+            <h2>Heyyy, thank you for your purchase. </h2>
+            <div className={style.congratsTextBox}>
               <p>
                 You are amazing. Cheers to being <span>ARTSY!</span>
+                <Image
+                  src="/noto_party-popper.png"
+                  alt="party"
+                  width={32}
+                  height={33}
+                />
               </p>
-              <Image
-                src="/noto_party-popper.png"
-                alt="party"
-                width={32}
-                height={33}
-              />
             </div>
           </div>
         </div>
