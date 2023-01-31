@@ -361,6 +361,64 @@
   scrollbar-width: none;
 }
 
+.mobileInputBox {
+  padding: 10px 40px;
+}
+
+.mobileInputBox p {
+  /* color: #bcb7b7; */
+  font-size: 14px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.mobileInputBox input {
+  /* padding: 12px 50px 12px 20px;
+  width: 80%;
+  border-radius: 15px;
+  outline: none;
+  margin-right: 50px;
+  border: 1px solid #bcb7b7; */
+
+  width: 100%;
+  padding: 12px;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+
+.mobileInputBox {
+  position: relative;
+}
+
+.mobileInputBox i {
+  /* style the icon */
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  cursor: pointer;
+  color: #ccc;
+}
+
+.mobileInputBox input::placeholder {
+  /* style the placeholder */
+  color: #ccc;
+  transition: all 0.3s ease-in-out;
+}
+
+.mobileInputBox input:focus {
+  outline: none; /* remove the focus outline */
+}
+
+.mobileInputBox input:focus::placeholder {
+  /* move the placeholder on focus */
+  transform: translateY(-15px);
+  font-size: 12px;
+}
+
 /* FLOATING HEART */
 
 .BidBoxChatTextBox {
@@ -505,6 +563,8 @@
 
   .mobileAuction {
     display: block;
+    width: 100%;
+    height: 100vh;
   }
 
   .mobileAuctionImage {
@@ -630,12 +690,12 @@
     padding: 0 5px;
   }
 
-  .mobileInputBox {
+  /* .mobileInputBox {
     display: flex;
     align-items: center;
     gap: 30px;
     justify-content: center;
-  }
+  } */
 
   .mobileInput {
     border: 1px solid #ffffff;
@@ -678,12 +738,12 @@
     padding: 0 5px;
   }
 
-  .mobileInputBox {
+  /* .mobileInputBox {
     display: flex;
     align-items: center;
     gap: 30px;
     justify-content: center;
-  }
+  } */
 
   .mobileInput {
     border: 1px solid #ffffff;
@@ -726,13 +786,13 @@
     padding: 0 10px;
   }
 
-  .mobileInputBox {
+  /* .mobileInputBox {
     display: flex;
     align-items: center;
     gap: 30px;
     justify-content: center;
     margin: 0 10px;
-  }
+  } */
 
   .mobileInput {
     border: 1px solid #ffffff;
@@ -791,10 +851,10 @@
     cursor: pointer;
   }
 
-  .mobileInputBox {
+  /* .mobileInputBox {
     display: flex;
     align-items: center;
     gap: 30px;
     justify-content: center;
-  }
+  } */
 }

@@ -5,6 +5,7 @@ import styled from '../../styles/Auction.module.css';
 import { useRouter } from 'next/router';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { ParsedUrlQuery } from 'querystring';
+import Link from 'next/link';
 
 type Auction = {
   id: string;
@@ -52,7 +53,8 @@ export default function Bid({ auction }: AuctionProps) {
       <div className={styled.BidContainer}>
         <div className={styled.BidLinkBox}>
           <p>
-            Home/ Auctions/ <span> Live bid</span>
+            <Link href="/">Home</Link> / <Link href="/Auction">Auctions</Link> /
+            <span> Live bid</span>
           </p>
         </div>
         <div className={styled.BidBox}>
@@ -68,9 +70,12 @@ export default function Bid({ auction }: AuctionProps) {
               }}
             >
               <div className={styled.LiveBox}>
-                <i
-                  className={`uil uil-times-circle ${styled.closeAuctionBtn}`}
-                ></i>
+                <Link href="/Auction">
+                  <i
+                    className={`uil uil-times-circle ${styled.closeAuctionBtn}`}
+                  ></i>
+                </Link>
+
                 <div className={styled.auctionLiveBtn}>LIVE</div>
               </div>
               <div className={styled.liveBoxTitle}>
@@ -214,14 +219,17 @@ export default function Bid({ auction }: AuctionProps) {
         </h2>
       </div>
 
-      <div className={styled.mobileAuction}>
-        <Image
-          src="/Rectangle 260.png"
-          className={styled.mobileAuctionImage}
-          alt=""
-          width={50}
-          height={50}
-        />
+      <div
+        className={styled.mobileAuction}
+        style={{
+          // width: 622,
+          // height: 750,
+          backgroundImage: `url(${auction.url})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          position: 'relative',
+        }}
+      >
         <div className={styled.mobileAuctionContent}>
           <div className={styled.mobileTop}>
             <p className={styled.mobileTopText1}>Tag: Lost or Wither</p>
@@ -231,7 +239,9 @@ export default function Bid({ auction }: AuctionProps) {
                 <i className="uil uil-eye"></i> 295
               </p>
               <p className={styled.mobileTopText4}>
-                <i className="uil uil-multiply"></i>
+                <Link href="/Auction">
+                  <i className="uil uil-multiply"></i>
+                </Link>
               </p>
             </div>
           </div>
@@ -294,7 +304,7 @@ export default function Bid({ auction }: AuctionProps) {
                   placeholder="Place a bid"
                   className={styled.mobileInput}
                 />
-                <i className={`${styled.mobileSend} uil uil-message`}></i>
+
                 <i className="uil uil-heart"></i>
               </div>
             </div>
