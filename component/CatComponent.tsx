@@ -8,7 +8,6 @@ import {
   removeAllFromBasket,
   removeFromBasket,
 } from '../redux/features/basketSlice';
-import { decrement, setCount } from '../redux/features/counterSlice';
 import { RootState } from '../redux/store';
 import style from '../styles/Cart.module.css';
 
@@ -64,8 +63,9 @@ export default function CatComponent({ id, items }: Props) {
   };
 
   const Total = () => {
-    return `$${(item.quantity || 0) * items[0].price.usd}`;
+    return (item.quantity || 0) * items[0].price.usd;
   };
+
   return (
     <div className={style.shoppingBox}>
       <div className={style.shoppingContainer}>
@@ -92,7 +92,7 @@ export default function CatComponent({ id, items }: Props) {
         </div>
         <div className={style.shoppingClose} onClick={removeAllItemInBasket}>
           <i className="uil uil-times-circle"></i>
-          <p>{Total()}</p>
+          <p>${Total().toFixed(1)}</p>
         </div>
       </div>
     </div>
