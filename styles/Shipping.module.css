@@ -1,13 +1,9 @@
 .shippingComponent {
   display: flex;
-  /* align-items: center;
-  justify-content: center; */
+  align-items: center;
+  justify-content: center;
   gap: 10%;
   padding: 0 100px;
-}
-
-.shippingComponent1 {
-  width: 45%;
 }
 
 .shippingComponent2 {
@@ -81,6 +77,19 @@
   color: white;
   text-align: center;
   margin: 50px 0;
+}
+
+.shippingFormBtn:hover {
+  background-image: linear-gradient(
+    to right,
+    #006ca2 13.63%,
+    rgba(192, 86, 9, 0.49) 67.89%
+  );
+  box-shadow: 0px 0px 15px rgba(192, 86, 9, 0.49) 67.89%;
+  transform: translateY(-5px);
+  text-shadow: 0px 0px 5px rgba(192, 86, 9, 0.49) 67.89%;
+  transition: background-image 1s, box-shadow 1s, transform 1s, text-shadow 1s,
+    color 1s;
 }
 
 /* SHIPPING CART SMALL */
@@ -203,7 +212,6 @@
 
   .shippingFormBtn {
     padding: 17.5073px 64.0111px;
-    background: #3341c1;
     border-radius: 4px;
     color: white;
     text-align: center;
