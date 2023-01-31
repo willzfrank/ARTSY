@@ -1,20 +1,36 @@
+import Head from 'next/head';
 import React from 'react';
-import HeadComponent from '../app/Head';
-import { MarketplaceLink, Navbar } from '../component';
+import styled from '../styles/Stepper.module.css';
+import { Navbar } from '../component';
 import { ShippingComponent } from '../sections';
-import style from '../styles/Cart.module.css';
 
 export default function Shipping() {
   return (
     <div>
-      <HeadComponent />
+      <Head>
+        <title>Shipping Information</title>
+        <meta
+          name="description"
+          content="Enter your shipping information for delivery of your products."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/favicon_io/android-chrome-512x512.png" />
+        <link
+          href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,300,400&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          rel="stylesheet"
+          href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+        />
+      </Head>
       <Navbar />
-      <div className={style.marketLinkBox}>
-        <div className={style.marketLinkShipping}>
-          <div className={style.marketLinkContent}>
-            <p className={style.cartHover}>Shopping cart</p>
-            <p className={style.marketLinkStyling}>Shipping details</p>
-            <p className={style.cartHover}>Payment details</p>
+      <div className={styled.cartLinkBox}>
+        <div className={styled.cartLink}>
+          <div className={styled.cartLinkContent}>
+            <p className={styled.cartHover}>Shopping cart</p>
+            <p className={styled.cartLinkStyling}>Shipping details</p>
+            <p className={styled.cartHover}>Payment details</p>
           </div>
         </div>
       </div>

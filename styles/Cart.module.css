@@ -50,15 +50,6 @@
   border-bottom: 0.5px solid #747474;
 }
 
-.cartHover:hover {
-  background-color: #c7c6c6;
-  padding: 0px 10px;
-  transition: 0.5s ease-in-out;
-  cursor: pointer;
-  color: #292929 !important;
-  border-radius: 2px;
-}
-
 /* SHOPPING CART */
 
 .emptyCartBox {

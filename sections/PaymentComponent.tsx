@@ -5,6 +5,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { RootState } from '../redux/store';
 import { useRouter } from 'next/router';
 import { selectBasketTotal } from '../redux/features/basketSlice';
+import Link from 'next/link';
 
 type Props = {};
 
@@ -27,7 +28,10 @@ function PaymentComponent({}: Props) {
   return (
     <section>
       <p className={styled.pagination}>
-        Home/ Marketplace/ Cart/ Shipping/<span>Payment</span>
+        <Link href="/">Home</Link> /{' '}
+        <Link href="/MarketPlace">Marketplace</Link> /{' '}
+        <Link href="/Cart">Cart</Link> / <Link href="/Shipping">Shipping</Link>{' '}
+        / <span>Payment</span>
       </p>
       <h1 className={styled.paymentMobileContainerTitle}>
         <Image

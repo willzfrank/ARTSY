@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Image from 'next/image';
 import React from 'react';
 import HeadComponent from '../app/Head';
@@ -17,7 +18,7 @@ function Success({}: Props) {
     return () => {
       clearTimeout(timer);
     };
-  });
+  }, []);
   return (
     <div>
       {isLoading ? (
@@ -32,7 +33,26 @@ function Success({}: Props) {
         </div>
       ) : (
         <div>
-          <HeadComponent />
+          <Head>
+            <title>Success</title>
+            <meta
+              name="description"
+              content="Congratulations on your successful purchase! Celebrate being artsy with us."
+            />
+            <meta
+              name="viewport"
+              content="width=device-width, initial-scale=1.0"
+            />
+            <link rel="icon" href="/favicon_io/android-chrome-512x512.png" />
+            <link
+              href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,300,400&display=swap"
+              rel="stylesheet"
+            />
+            <link
+              rel="stylesheet"
+              href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+            />
+          </Head>
           <Navbar />
           <div className={style.congrats}>
             <div className={style.color1}></div>

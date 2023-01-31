@@ -1,16 +1,12 @@
 import React from 'react';
-import HeadComponent from '../app/Head';
-import {
-  CartComponent,
-  CheckoutBox,
-  MarketplaceLink,
-  Navbar,
-} from '../component';
+import { CartComponent, CheckoutBox, Navbar } from '../component';
 import style from '../styles/Cart.module.css';
 import { useSelector } from 'react-redux';
 import { selectBasketItems } from '../redux/features/basketSlice';
 import Image from 'next/image';
 import Link from 'next/link';
+import Head from 'next/head';
+import styled from '../styles/Stepper.module.css';
 
 export default function Cart() {
   const [groupedItemsInBasket, setGroupedItemsInBasket] = React.useState(
@@ -28,17 +24,33 @@ export default function Cart() {
   }, [items]);
   return (
     <div>
-      <HeadComponent />
+      <Head>
+        <title>Cart</title>
+        <meta
+          name="description"
+          content="A shopping cart for an e-commerce website"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/favicon_io/android-chrome-512x512.png" />
+        <link
+          href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,300,400&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          rel="stylesheet"
+          href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+        />
+      </Head>
       <Navbar />
 
       {items.length > 0 ? (
         <>
-          <div className={style.marketLinkBox}>
-            <div className={style.marketLink}>
-              <div className={style.marketLinkContent}>
-                <p className={style.marketLinkStyling}>Shopping cart</p>
-                <p className={style.cartHover}>Shipping details</p>
-                <p className={style.cartHover}>Payment details</p>
+          <div className={styled.cartLinkBox}>
+            <div className={styled.cartLink}>
+              <div className={styled.cartLinkContent}>
+                <p className={styled.cartLinkStyling}>Shopping cart</p>
+                <p className={styled.cartHover}>Shipping details</p>
+                <p className={styled.cartHover}>Payment details</p>
               </div>
             </div>
           </div>

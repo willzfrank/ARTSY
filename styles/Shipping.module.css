@@ -181,10 +181,9 @@
 @media (min-width: 320px) and (max-width: 979px) {
   .shippingComponent {
     display: flex;
-    flex-direction: column-reverse;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 0px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
   }
 
   .shippingFormContent {

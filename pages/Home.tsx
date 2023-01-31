@@ -17,7 +17,7 @@ export default function Homepage() {
     return () => {
       clearTimeout(timer);
     };
-  });
+  }, []);
 
   return (
     <div>

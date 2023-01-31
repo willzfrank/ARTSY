@@ -1,16 +1,30 @@
+import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import HeadComponent from '../app/Head';
 import { Navbar } from '../component';
 import styles from '../styles/construction.module.css';
 
-type Props = {};
-
-const construction = (props: Props) => {
+const construction = () => {
   return (
     <div>
-      <HeadComponent />
+      <Head>
+        <title>Page under construction</title>
+        <meta
+          name="description"
+          content="This page is currently under construction but we are ready to take care of your needs."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="/favicon_io/android-chrome-512x512.png" />
+        <link
+          href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,300,400&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          rel="stylesheet"
+          href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+        />
+      </Head>
       <Navbar />
       <div className={styles.constructionContainer}>
         <div className={styles.constructionHeader}>

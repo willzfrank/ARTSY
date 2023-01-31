@@ -13,6 +13,7 @@ type Product = {
   };
   url: string;
   quantity: number;
+  description: string;
 };
 
 declare module 'react-reveal/Bounce';
@@ -65,7 +66,7 @@ type Bid = {
   };
 };
 
-type AuctionProps= {
+type AuctionProps = {
   auction: Auction[];
   bids: Bid[];
-}
+};
