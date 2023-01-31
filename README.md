@@ -8,8 +8,6 @@
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/willzfrank)](https://github.com/willzfrank/issues)
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/willzfrank)](https://github.com/willzfrank)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
 </div>
