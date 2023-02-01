@@ -1,34 +1,98 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+  <a href="" rel="noopener">
+ <img width=200px height=200px src="./public/ezgif.com-gif-maker.gif" alt="Project logo"></a>
+</p>
 
-## Getting Started
+<h3 align="center">Artsy</h3>
 
-First, run the development server:
+<div align="center">
 
-```bash
-npm run dev
-# or
-yarn dev
+[![Status](https://img.shields.io/badge/status-active-success.svg)]()
+[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
+
+</div>
+
+---
+
+<p align="center"> Built with Next js and Typescript.
+    <br> 
+</p>
+
+## 📝 Table of Contents
+
+- [About](#about)
+- [Getting Started](#getting_started)
+- [Deployment](#deployment)
+- [Usage](#usage)
+- [Built Using](#built_using)
+- [TODO](../TODO.md)
+- [Contributing](../CONTRIBUTING.md)
+- [Authors](#authors)
+- [Acknowledgments](#acknowledgement)
+
+## 🧐 About <a name = "about"></a>
+
+Artsy helps in exploring a curated selection of unique artworks and artists. Find your next favorite piece of art today.
+
+## 🏁 Getting Started <a name = "getting_started"></a>
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+
+### Prerequisites
+
+What things you need to install the software and how to install them.
+
+<ul>
+  <li> <a href="https://nodejs.org/en/download/">Node</a></li>
+  <li> <a href="https://yarnpkg.com/getting-started/install">Yarn</a></li>
+</ul>
+
+```
+Give examples
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installing
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+A step by step series of examples that tell you how to get a development env running.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+<ol>
+<li>Clone the repository to your local machine</li>
+<li>cd your-repository
+</li>
+<li>Install the dependencies</li>
+</ol>
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```
+Example
+```
 
-## Learn More
+git clone https://github.com/your-username/your-repository.git
 
-To learn more about Next.js, take a look at the following resources:
+cd your-repository
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+yarn install
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 🎈 Usage <a name="usage"></a>
 
-## Deploy on Vercel
+A step by step series of examples that tell you how to get the development environment running:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+yarn start
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Open http://localhost:3000 to view it in the browser.
+
+## 🚀 Deployment <a name = "deployment"></a>
+
+<a href="https://artsy-swart.vercel.app">Artsy Deployed link </a>
+
+## ⛏️ Built Using <a name = "built_using"></a>
+
+- [TypeScript](https://www.typescriptlang.org/) - Type checking
+- [NextJs](https://nextjs.org/) - Web Framework
+- [NodeJs](https://nodejs.org/en/) - node Environment
+
+## ✍️ Authors <a name = "authors"></a>
+
+- [@kylelobo](https://github.com/codingossy) - Idea & Initial work
+- [@celestinaa0](https://behance.net/bammiewh0) - Designed by
