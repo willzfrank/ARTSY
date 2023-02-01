@@ -1,6 +1,6 @@
 <p align="center">
   <a href="" rel="noopener">
- <img width=200px height=200px src="./public/ezgif.com-gif-maker.gif" alt="Project logo"></a>
+ <img width=100% height=200px src="./public/ezgif.com-gif-maker.gif" alt="Project logo"></a>
 </p>
 
 <h3 align="center">Artsy</h3>
@@ -27,10 +27,7 @@
 - [Deployment](#deployment)
 - [Usage](#usage)
 - [Built Using](#built_using)
-- [TODO](../TODO.md)
-- [Contributing](../CONTRIBUTING.md)
 - [Authors](#authors)
-- [Acknowledgments](#acknowledgement)
 
 ## 🧐 About <a name = "about"></a>
 
@@ -49,36 +46,38 @@ What things you need to install the software and how to install them.
   <li> <a href="https://yarnpkg.com/getting-started/install">Yarn</a></li>
 </ul>
 
-```
-Give examples
-```
-
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running.
 
 <ol>
-<li>Clone the repository to your local machine</li>
-<li>cd your-repository
+<li>Clone the repository to your local machine
+<br>
+```
+git clone https://github.com/willzfrank/artsy.git
+```
 </li>
-<li>Install the dependencies</li>
-</ol>
-
+<li>cd your-repository
+<br>
 ```
-Example
-```
-
-git clone https://github.com/your-username/your-repository.git
-
 cd your-repository
-
+```
+</li>
+<li>Install the dependencies
+<br>
+```
 yarn install
+```
+</li>
+</ol>
 
 ## 🎈 Usage <a name="usage"></a>
 
 A step by step series of examples that tell you how to get the development environment running:
 
+```
 yarn start
+```
 
 Open http://localhost:3000 to view it in the browser.
 
@@ -94,5 +93,5 @@ Open http://localhost:3000 to view it in the browser.
 
 ## ✍️ Authors <a name = "authors"></a>
 
-- [@kylelobo](https://github.com/codingossy) - Idea & Initial work
+- [@codingossy](https://github.com/codingossy) - Idea & Initial work
 - [@celestinaa0](https://behance.net/bammiewh0) - Designed by
