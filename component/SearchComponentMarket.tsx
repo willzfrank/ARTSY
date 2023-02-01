@@ -29,69 +29,15 @@ const SearchComponentMarket = () => {
         <p className={`${styled.mobilehidden} ${styled.marketPlaceSortResult}`}>
           See 1-6 of 15 results
         </p>
-        <div
-          className={`${styled.hidden} ${styled.marketPlaceSortContent}`}
-          onClick={toggleFilterDropdown}
-        >
-          <p>Filters</p>
-          <i className={`uil uil-angle-down ${isOpen && 'arrowOpen'}`}></i>
-
-          <div className={styled.filterDropdown}>
-            {isFilterOpen && (
-              <div className={style.checkmarkContainer}>
-                <label htmlFor="" className={style.categoryContainer}>
-                  <input
-                    type="checkbox"
-                    name=""
-                    id=""
-                    className={style.checkmarkBox}
-                  />
-                  <span className={style.checkmark}></span>
-                  Editorials
-                </label>
-                <label htmlFor="" className={style.categoryContainer}>
-                  <input
-                    type="checkbox"
-                    name=""
-                    id=""
-                    className={style.checkmarkBox}
-                  />
-                  <span className={style.checkmark}></span>
-                  Fashion
-                </label>
-                <label htmlFor="" className={style.categoryContainer}>
-                  <input
-                    type="checkbox"
-                    name=""
-                    id=""
-                    className={style.checkmarkBox}
-                  />
-                  <span className={style.checkmark}></span>
-                  Optics
-                </label>
-                <label htmlFor="" className={style.categoryContainer}>
-                  <input
-                    type="checkbox"
-                    name=""
-                    id=""
-                    className={style.checkmarkBox}
-                  />
-                  <span className={style.checkmark}></span>
-                  Art & Museum
-                </label>
-                <label htmlFor="" className={style.categoryContainer}>
-                  <input
-                    type="checkbox"
-                    name=""
-                    id=""
-                    className={style.checkmarkBox}
-                  />
-                  <span className={style.checkmark}></span>
-                  Nature
-                </label>
-              </div>
-            )}
-          </div>
+        <div className={`${styled.hidden} ${styled.marketPlaceSortContent}`}>
+          <select className={style.price_select}>
+            <option value="all">Filters </option>
+            <option value="all">Editorials</option>
+            <option value="below100">Fashion</option>
+            <option value="100to150">Optics</option>
+            <option value="150to200">Art & Museum</option>
+            <option value="above200">Nature</option>
+          </select>
         </div>
 
         <div>
